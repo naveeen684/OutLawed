@@ -1,6 +1,7 @@
 # website-react
 
-To run the code:
+##To run the code:
+
           1)open a terminal
           2)git clone
           3)cd frontend\gui\
@@ -15,5 +16,5 @@ To run the code:
           12)python manage.py runserver
 
 
-Note: Both terminals needs to run parallely.
+###Note: Both terminals needs to run parallely.
 You can login and register.
