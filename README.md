@@ -3,7 +3,7 @@
 ##To run the code:
 
           1)open a terminal
-          2)git clone
+          2)git clone https://github.com/outlawedindia/website-react.git
           3)cd frontend\gui\
           4)npm install
           5)npm start
