@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #049abf;
+}
+
+.logo{
+    flex: 1;
+}
+
+.logo_img{
+    width: 100px;
+    height: 100px;
+    margin-left: -600px;
+}

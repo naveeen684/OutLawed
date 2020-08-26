@@ -3,6 +3,8 @@ import * as actions from "../store/actions/auth";
 import { Layout, Menu, Dropdown, Button } from "antd";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
+import './layout.css'
+import logo from '../dummy-logo.jpg'
 const { Header, Footer, Content } = Layout;
 
 const menu = (
@@ -23,9 +25,12 @@ class CustomLayout extends React.Component {
   render() {
     return (
       <Layout className="layout">
-        <Header>
-          <div className="logo" />
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
+        <Header className="navbar">
+          <div className="logo">
+            <img src={logo} alt="Logo" className="logo_img" />
+            {/* "../../public/dummy-logo.jpg" */}
+          </div>
+          <Menu style={{background:'#049abf',color:'#fafafa'}} mode="horizontal" defaultSelectedKeys={["1"]}>
             <Menu.Item key="1">
               <Link to="/">Home</Link>
             </Menu.Item>

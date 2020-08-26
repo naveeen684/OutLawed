@@ -1,10 +1,11 @@
-import React from "react";
+import React,{ Component } from "react";
+import Component1 from './Component1';
 
-class Home extends React.Component {
+class Home extends Component {
   render() {
     return (
       <div>
-        <h2>Home</h2>
+        <Component1 />
       </div>
     );
   }
