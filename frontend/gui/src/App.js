@@ -15,9 +15,9 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <CustomLayout {...this.props}>
+          <CustomLayout {...this.props} style={{width:"100vw"}}>
             <BaseRouter />
-          </CustomLayout>
+          </CustomLayout >
         </Router>
       </div>
     );

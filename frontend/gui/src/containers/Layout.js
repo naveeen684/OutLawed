@@ -3,9 +3,10 @@ import * as actions from "../store/actions/auth";
 import { Layout, Menu, Dropdown, Button } from "antd";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import './layout.css'
-import logo from '../dummy-logo.jpg'
-const { Header, Footer, Content } = Layout;
+import './layout.css';
+import logo from './images/logo.jpeg';
+import Footer from './Footer';
+const { Header, Content } = Layout;
 
 const menu = (
   <Menu>
@@ -24,13 +25,12 @@ const menu = (
 class CustomLayout extends React.Component {
   render() {
     return (
-      <Layout className="layout">
-        <Header className="navbar">
+      <Layout className="layout" style={{width:"100vw"}} >
+        <Header className="navbar" style={{width:"100vw"}}>
           <div className="logo">
             <img src={logo} alt="Logo" className="logo_img" />
-            {/* "../../public/dummy-logo.jpg" */}
           </div>
-          <Menu style={{background:'#049abf',color:'#fafafa'}} mode="horizontal" defaultSelectedKeys={["1"]}>
+          <Menu style={{background:'#fafafa',color:'#049abf'}} mode="horizontal" defaultSelectedKeys={["1"]}>
             <Menu.Item key="1">
               <Link to="/">Home</Link>
             </Menu.Item>
@@ -85,8 +85,8 @@ class CustomLayout extends React.Component {
             )}
           </Menu>
         </Header>
-        <Content style={{ padding: "0 50px" }}>
-          <div style={{ background: "#fff", padding: 24, minHeight: 280 }}>
+        <Content >
+          <div style={{ background: "#fff", padding: 0, minHeight: 280 }}>
             {this.props.children}
           </div>
         </Content>
