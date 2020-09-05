@@ -29,8 +29,7 @@ class CustomLayout extends React.Component {
             <Menu.Item key="1">
               <Link to="/">Home</Link>
             </Menu.Item>
-            {this.props.isAuthenticated ? (
-              <Menu.Item key="2">
+            <Menu.Item key="2">
                 <Dropdown
                   style={{ background: "transparent" }}
                   overlay={menu}
@@ -48,11 +47,7 @@ class CustomLayout extends React.Component {
                   </Button>
                 </Dropdown>
               </Menu.Item>
-            ) : (
-              <Menu.Item key="3">
-                <Link to="/login">Our works</Link>
-              </Menu.Item>
-            )}
+           
 
             <Menu.Item key="4">
               <Link to="/collaborations">Collaborations</Link>
@@ -80,7 +75,7 @@ class CustomLayout extends React.Component {
             )}
           </Menu>
         </Header>
-        <Content style={{ padding: "0 50px" }}>
+        <Content style={{ padding: "0 0px" }}>
           <div style={{ background: "#fff", padding: 24, minHeight: 280 }}>
             {this.props.children}
           </div>

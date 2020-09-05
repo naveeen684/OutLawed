@@ -1,13 +1,13 @@
 import React from "react";
 
-class CommunityWork extends React.Component {
+class Outreach extends React.Component {
   render() {
     return (
       <div>
-        <h2>CommunityWork</h2>
+        <h2>Outreach</h2>
       </div>
     );
   }
 }
 
-export default CommunityWork;
+export default Outreach;
