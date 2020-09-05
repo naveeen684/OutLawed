@@ -1,5 +1,6 @@
 import React from 'react';
 import { Spring } from 'react-spring/renderprops';
+import Background from './images/top.svg';
 import './component1.css'
 
 function Component1() {
@@ -10,14 +11,18 @@ function Component1() {
         {props=>(    
             <div style={props} className="trial">
                 <div style={{
-                    background: '#049abf',
                     color : 'white',
-                    //marginLeft:'-441.9px',
                     float:'left',
                     position: 'relative',
-                    height:'100%',
+                    height:'90vh',
                     width : '100vw',
-                    verticalAlign:'middle'}}>
+                    verticalAlign:'middle',
+                    backgroundImage: `url(${Background})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                    }}>
+                        {/* <img src={Background} style={{objectFit:"cover"}}/> */}
                         <Spring 
                         from = {{opacity:0}}
                         to = {{opacity:1}}
@@ -27,15 +32,17 @@ function Component1() {
                                 <div style={{position: 'absolute',
                                     top: '50%',
                                     left: '50%',
-                                    transform: 'translate(-50%, -50%)'}}>
+                                    transform: 'translate(-50%, -50%)',
+                                    width:"75vw"
+                                    }}>
                                         <Spring from={{marginBottom:-100}}
                                         to={{marginBottom:0}}
-                                        config={{delay:1000,duration:1000}}>
+                                        config={{delay:1000,duration:500}}>
                                             {props=>(
-                                                <div>
-                                                    <h1 style={{color:"#fafafa"}}>OUTLAWED</h1>
+                                                <div style={props}>
+                                                    <h1 style={{color:"#fafafa",fontFamily:"Montserrat", fontSize:"140px"}}>OUTLAWED</h1>
                                                     <div>
-                                                        <h1 style={{color:"#fafafa"}}>SIMPLIFYING WHAT IT MEANS TO BE AN AWARE CITIZEN</h1>
+                                                        <p style={{color:"#fafafa", fontSize:"40px"}}><strong>SIMPLIFYING WHAT IT MEANS TO BE AN AWARE CITIZEN</strong></p>
                                                     </div>
                                                 </div>
                                             )}

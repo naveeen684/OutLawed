@@ -26,7 +26,7 @@ class CustomLayout extends React.Component {
   render() {
     return (
       <Layout className="layout" style={{width:"100vw"}} >
-        <Header className="navbar" style={{width:"100vw"}}>
+        <Header className="navbar" style={{width:"98vw"}}>
           <div className="logo">
             <img src={logo} alt="Logo" className="logo_img" />
           </div>
@@ -34,7 +34,7 @@ class CustomLayout extends React.Component {
             <Menu.Item key="1">
               <Link to="/">Home</Link>
             </Menu.Item>
-            {this.props.isAuthenticated ? (
+
               <Menu.Item key="2">
                 <Dropdown
                   style={{ background: "transparent" }}
@@ -53,11 +53,11 @@ class CustomLayout extends React.Component {
                   </Button>
                 </Dropdown>
               </Menu.Item>
-            ) : (
+            {/* ) : (
               <Menu.Item key="3">
                 <Link to="/login">Our works</Link>
               </Menu.Item>
-            )}
+            )} */}
 
             <Menu.Item key="4">
               <Link to="/collaborations">Collaborations</Link>
