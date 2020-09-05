@@ -3,7 +3,10 @@ import * as actions from "../store/actions/auth";
 import { Layout, Menu, Dropdown, Button } from "antd";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-const { Header, Footer, Content } = Layout;
+import './layout.css';
+import logo from './images/logo.jpeg';
+import Footer from './Footer';
+const { Header, Content } = Layout;
 
 const menu = (
   <Menu>
@@ -22,14 +25,17 @@ const menu = (
 class CustomLayout extends React.Component {
   render() {
     return (
-      <Layout className="layout">
-        <Header>
-          <div className="logo" />
-          <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
+      <Layout className="layout" style={{width:"100vw"}} >
+        <Header className="navbar" style={{width:"98vw"}}>
+          <div className="logo">
+            <img src={logo} alt="Logo" className="logo_img" />
+          </div>
+          <Menu style={{background:'#fafafa',color:'#049abf'}} mode="horizontal" defaultSelectedKeys={["1"]}>
             <Menu.Item key="1">
               <Link to="/">Home</Link>
             </Menu.Item>
-            <Menu.Item key="2">
+
+              <Menu.Item key="2">
                 <Dropdown
                   style={{ background: "transparent" }}
                   overlay={menu}
@@ -47,7 +53,11 @@ class CustomLayout extends React.Component {
                   </Button>
                 </Dropdown>
               </Menu.Item>
-           
+            {/* ) : (
+              <Menu.Item key="3">
+                <Link to="/login">Our works</Link>
+              </Menu.Item>
+            )} */}
 
             <Menu.Item key="4">
               <Link to="/collaborations">Collaborations</Link>
@@ -75,8 +85,8 @@ class CustomLayout extends React.Component {
             )}
           </Menu>
         </Header>
-        <Content style={{ padding: "0 0px" }}>
-          <div style={{ background: "#fff", padding: 24, minHeight: 280 }}>
+        <Content >
+          <div style={{ background: "#fff", padding: 0, minHeight: 280 }}>
             {this.props.children}
           </div>
         </Content>
