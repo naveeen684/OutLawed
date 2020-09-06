@@ -1,4 +1,85 @@
-.trial{
-    height:70vh ;
-    width:100vw;
+.trial {
+    height: 70vh;
+    width: 100vw;
+}
+
+/* 
+div {
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    color: #fafafa;
+    font-family: "Montserrat";
+    font-size: 10vh;
+}*/
+
+p {
+    color: #fafafa;
+    font-size: 4vh;
+}
+
+@media (max-width:900px) {
+    p {
+        font-size: 3vh;
+    }
+}
+
+@media (max-width:700px) {
+    p {
+        font-size: 2.5vh;
+    }
+}
+
+@media (max-width:600px) {
+
+    h1 {
+        font-size: 9.5vh !important;
+    }
+
+    p {
+        font-size: 2.5vh;
+    }
+}
+
+
+@media (max-width:550px) {
+
+    h1 {
+        font-size: 8vh !important;
+    }
+
+}
+
+@media (max-width:430px) {
+
+    h1 {
+        font-size: 6vh !important;
+    }
+
+    p {
+        font-size: 1.5vh;
+    }
+
+}
+
+@media (max-width:325px) {
+
+    h1 {
+        font-size: 5vh !important;
+    }
+
+}
+
+@media (max-width:260px) {
+
+    h1 {
+        font-size: 4vh !important;
+    }
+
 }

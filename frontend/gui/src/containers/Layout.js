@@ -3,94 +3,186 @@ import * as actions from "../store/actions/auth";
 import { Layout, Menu, Dropdown, Button } from "antd";
 import { Link, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
-import './layout.css';
-import logo from './images/logo.jpeg';
-import Footer from './Footer';
+import "./layout.css";
+import logo from "./images/logo.jpeg";
+import toggle from "./images/toggle.png";
+import Footer from "./Footer";
+
+import {
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarNav,
+  MDBNavItem,
+  MDBNavLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBFormInline,
+  MDBDropdown,
+  MDBDropdownToggle,
+  MDBDropdownMenu,
+  MDBDropdownItem,
+} from "mdbreact";
 const { Header, Content } = Layout;
 
-const menu = (
-  <Menu>
-    <Menu.Item>
-      <Link to="/ourworks/community-work">Community work</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/ourworks/school-program">School program</Link>
-    </Menu.Item>
-    <Menu.Item>
-      <Link to="/ourworks/outlawed-sessions"> Outlawed sessions</Link>
-    </Menu.Item>
-  </Menu>
-);
-
 class CustomLayout extends React.Component {
+  state = {
+    isOpen: false,
+  };
+
+  toggleCollapse = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  };
   render() {
     return (
-      <Layout className="layout" style={{width:"100vw"}} >
-        <Header className="navbar" style={{width:"98vw"}}>
-          <div className="logo">
-            <img src={logo} alt="Logo" className="logo_img" />
-          </div>
-          <Menu style={{background:'#fafafa',color:'#049abf'}} mode="horizontal" defaultSelectedKeys={["1"]}>
-            <Menu.Item key="1">
-              <Link to="/">Home</Link>
-            </Menu.Item>
+      <Layout className="layout" style={{ width: "100vw", background: "#fff" }}>
+        <MDBNavbar color="white" dark expand="md">
+          <MDBNavbarBrand>
+            <MDBNavLink to="/">
+              <div className="logo">
+                <img src={logo} alt="Logo" className="logo_img" />
+              </div>
+            </MDBNavLink>
+          </MDBNavbarBrand>
 
-              <Menu.Item key="2">
-                <Dropdown
-                  style={{ background: "transparent" }}
-                  overlay={menu}
-                  arrow
-                >
-                  <Button
-                    style={{
-                      background: "transparent",
-                      border: "none",
-                      color: "white",
-                      padding: "0",
-                    }}
+          <MDBNavbarToggler
+            image={toggle}
+            onClick={this.toggleCollapse}
+            style={{ marginRight: "3%" }}
+          />
+          <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+            <MDBNavbarNav right style={{ marginRight: "1%" }}>
+              <MDBNavItem className="item" active>
+                <MDBNavLink to="/">
+                  <strong
+                    className="grey-text mr-3"
+                    style={{ fontSize: "2.2vh" }}
                   >
-                    Our works
-                  </Button>
-                </Dropdown>
-              </Menu.Item>
-            {/* ) : (
-              <Menu.Item key="3">
-                <Link to="/login">Our works</Link>
-              </Menu.Item>
-            )} */}
+                    Home
+                  </strong>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem className="item">
+                <MDBDropdown>
+                  <MDBDropdownToggle nav caret>
+                    <strong
+                      className="grey-text mr-3"
+                      style={{ fontSize: "2.2vh" }}
+                    >
+                      Our works
+                    </strong>
+                  </MDBDropdownToggle>
+                  <MDBDropdownMenu>
+                    <MDBDropdownItem
+                      className="item"
+                      href="/ourworks/community-work"
+                    >
+                      <strong
+                        style={{ fontSize: "2vh" }}
+                        className="grey-text "
+                      >
+                        Community work
+                      </strong>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem
+                      className="item"
+                      href="/ourworks/school-program"
+                    >
+                      <strong style={{ fontSize: "2vh" }} className="grey-text">
+                        School program
+                      </strong>
+                    </MDBDropdownItem>
+                    <MDBDropdownItem
+                      className="item"
+                      href={
+                        this.props.isAuthenticated
+                          ? "/ourworks/outlawed-sessions"
+                          : "/login"
+                      }
+                    >
+                      <strong
+                        style={{ fontSize: "2vh" }}
+                        className="grey-text mr-3"
+                      >
+                        Outlawed sessions
+                      </strong>
+                    </MDBDropdownItem>
+                  </MDBDropdownMenu>
+                </MDBDropdown>
+              </MDBNavItem>
+              <MDBNavItem className="item">
+                <MDBNavLink to="/collaborations">
+                  <strong
+                    className="grey-text mr-3"
+                    style={{ fontSize: "2.2vh" }}
+                  >
+                    Collaborations
+                  </strong>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem className="item">
+                <MDBNavLink to="/outreach">
+                  <strong
+                    className="grey-text mr-3"
+                    style={{ fontSize: "2.2vh" }}
+                  >
+                    Outreach
+                  </strong>
+                </MDBNavLink>
+              </MDBNavItem>
+              {this.props.isAuthenticated ? (
+                <MDBNavItem className="item">
+                  <MDBNavLink to="/login" onClick={this.props.logout}>
+                    <strong
+                      className="grey-text mr-3"
+                      style={{ fontSize: "2.2vh" }}
+                    >
+                      Logout
+                    </strong>
+                  </MDBNavLink>
+                </MDBNavItem>
+              ) : (
+                <MDBNavItem className="item">
+                  <MDBNavLink to="/login">
+                    <strong
+                      className="grey-text mr-3"
+                      style={{ fontSize: "2.2vh" }}
+                    >
+                      Login
+                    </strong>
+                  </MDBNavLink>
+                </MDBNavItem>
+              )}
 
-            <Menu.Item key="4">
-              <Link to="/collaborations">Collaborations</Link>
-            </Menu.Item>
-
-            <Menu.Item key="5">
-              <Link to="/outreach">Outreach</Link>
-            </Menu.Item>
-            {this.props.isAuthenticated ? (
-              <Menu.Item key="6" onClick={this.props.logout}>
-                Logout
-              </Menu.Item>
-            ) : (
-              <Menu.Item key="7">
-                <Link to="/login">Login</Link>
-              </Menu.Item>
-            )}
-
-            {this.props.isAuthenticated ? (
-              <></>
-            ) : (
-              <Menu.Item key="8">
-                <Link to="/signup">Signup</Link>
-              </Menu.Item>
-            )}
-          </Menu>
-        </Header>
-        <Content >
-          <div style={{ background: "#fff", padding: 0, minHeight: 280 }}>
+              {this.props.isAuthenticated ? (
+                <></>
+              ) : (
+                <MDBNavItem className="item">
+                  <MDBNavLink to="/signup">
+                    <strong
+                      className="grey-text mr-3"
+                      style={{ fontSize: "2.2vh" }}
+                    >
+                      Signup
+                    </strong>
+                  </MDBNavLink>
+                </MDBNavItem>
+              )}
+            </MDBNavbarNav>
+          </MDBCollapse>
+        </MDBNavbar>
+        <Content>
+          <div
+            className="content"
+            style={{
+              background: "#fff",
+              padding: 0,
+              minHeight: 280,
+            }}
+          >
             {this.props.children}
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>OutLawed ©2020</Footer>
+        <Footer style={{ background: "#fff" }}>OutLawed ©2020</Footer>
       </Layout>
     );
   }

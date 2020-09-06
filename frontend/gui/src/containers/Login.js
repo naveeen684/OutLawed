@@ -17,7 +17,10 @@ const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
 class Login extends React.Component {
   onFinish = (values) => {
     this.props.onAuth(values.email, values.password);
-    this.props.history.push("/login");
+  };
+
+  onVerified = () => {
+    this.props.history.push("/");
   };
 
   onFinishFailed = (errorInfo) => {
@@ -26,16 +29,17 @@ class Login extends React.Component {
 
   googleResponse = (response) => {
     this.props.googleAuth(response.accessToken);
-    this.props.history.push("/");
   };
 
   render() {
     let errorMessage = null;
     if (this.props.error) {
-      errorMessage = <p>{this.props.error.message}</p>;
+      errorMessage = <p style={{ color: "red" }}>{this.props.error.message}</p>;
     }
     return (
       <div>
+        {this.props.token ? this.onVerified() : console.log("no")}
+
         {this.props.loading ? (
           <Spin indicator={antIcon} />
         ) : (
@@ -68,10 +72,13 @@ class Login extends React.Component {
                 placeholder="Email"
               />
             </Form.Item>
-            {
-               (this.props.error)?
-                  <p>{this.props.error.response.data.['non_field_errors']}</p>:<></>
-            }
+            {this.props.error ? (
+              <p style={{ color: "red" }}>
+                {this.props.error.response.data["non_field_errors"]}
+              </p>
+            ) : (
+              <></>
+            )}
 
             <Form.Item
               name="password"
@@ -85,10 +92,13 @@ class Login extends React.Component {
                 placeholder="Password"
               />
             </Form.Item>
-            {
-               (this.props.error)?
-                  <p>{this.props.error.response.data.['password1']}</p>:<></>
-            }
+            {this.props.error ? (
+              <p style={{ color: "red" }}>
+                {this.props.error.response.data["password1"]}
+              </p>
+            ) : (
+              <></>
+            )}
 
             <Form.Item>
               <Button
@@ -99,7 +109,7 @@ class Login extends React.Component {
                   width: "100%",
                 }}
               >
-                Log in
+                {this.props.loading ? <Spin indicator={antIcon} /> : "Log in"}
               </Button>
               <h1>LOGIN WITH GOOGLE</h1>
               <GoogleLogin
@@ -136,13 +146,13 @@ const mapStateToProps = (state) => {
   return {
     loading: state.loading,
     error: state.error,
+    token: state.token,
   };
 };
 
 const mapDispathToprops = (dispatch) => {
   return {
-    onAuth: (email, password) =>
-      dispatch(actions.authLogin(email, password)),
+    onAuth: (email, password) => dispatch(actions.authLogin(email, password)),
     googleAuth: (accesstoken) => dispatch(actions.googleLogin(accesstoken)),
   };
 };
