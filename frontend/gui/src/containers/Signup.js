@@ -15,15 +15,11 @@ const layout = {
 
 class Signup extends React.Component {
   onFinish = (values) => {
-    this.props.onAuth(
-      values.email,
-      values.password,
-      values.confirm
-    );
+    this.props.onAuth(values.email, values.password, values.confirm);
+  };
 
+  onVerified = () => {
     this.props.history.push("/");
-
-
   };
 
   onFinishFailed = (errorInfo) => {
@@ -32,13 +28,10 @@ class Signup extends React.Component {
 
   render() {
     let errorMessage = null;
-    if (this.props.error) {
-      this.props.history.push("/signup");
-    }
-   
+
     return (
       <div>
-        
+        {this.props.token ? this.onVerified() : console.log("no")}
         {this.props.loading ? (
           <Spin indicator={antIcon} />
         ) : (
@@ -52,7 +45,6 @@ class Signup extends React.Component {
               maxWidth: "500px",
             }}
           >
-            
             <Form.Item
               name="email"
               rules={[
@@ -72,10 +64,13 @@ class Signup extends React.Component {
                 placeholder="Email"
               />
             </Form.Item>
-            {
-               (this.props.error)?
-                  <p>{this.props.error.response.data.['email']}</p>:<></>
-            }
+            {this.props.error ? (
+              <p style={{ color: "red" }}>
+                {this.props.error.response.data["email"]}
+              </p>
+            ) : (
+              <></>
+            )}
 
             <Form.Item
               name="password"
@@ -89,10 +84,13 @@ class Signup extends React.Component {
                 placeholder="Password"
               />
             </Form.Item>
-            {
-               (this.props.error)?
-                  <p>{this.props.error.response.data.['password1']}</p>:<></>
-            }
+            {this.props.error ? (
+              <p style={{ color: "red" }}>
+                {this.props.error.response.data["password1"]}
+              </p>
+            ) : (
+              <></>
+            )}
             <Form.Item
               name="confirm"
               rules={[
@@ -100,7 +98,7 @@ class Signup extends React.Component {
                   required: true,
                   message: "Please confirm your password!",
                 },
-               
+
                 ({ getFieldValue }) => ({
                   validator(rule, value) {
                     if (!value || getFieldValue("password") === value) {
@@ -146,6 +144,7 @@ const mapStateToProps = (state) => {
   return {
     loading: state.loading,
     error: state.error,
+    token: state.token,
   };
 };
 
