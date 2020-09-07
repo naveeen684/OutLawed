@@ -34,7 +34,7 @@ class CustomLayout extends React.Component {
   };
   render() {
     return (
-      <Layout className="layout" style={{ width: "100vw", background: "#fff" }}>
+      <Layout className="layout" style={{ width: "100vw",background: "#fff" }}>
         <MDBNavbar color="white" dark expand="md">
           <MDBNavbarBrand>
             <MDBNavLink to="/">
@@ -54,8 +54,8 @@ class CustomLayout extends React.Component {
               <MDBNavItem className="item" active>
                 <MDBNavLink to="/">
                   <strong
-                    className="grey-text mr-3"
-                    style={{ fontSize: "2.2vh" }}
+                    className=" mr-3"
+                    style={{ fontSize: "2.2vh" , color: "#049ABF"}}
                   >
                     Home
                   </strong>
@@ -65,8 +65,8 @@ class CustomLayout extends React.Component {
                 <MDBDropdown>
                   <MDBDropdownToggle nav caret>
                     <strong
-                      className="grey-text mr-3"
-                      style={{ fontSize: "2.2vh" }}
+                      className=" mr-3"
+                      style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
                       Our works
                     </strong>
@@ -77,8 +77,8 @@ class CustomLayout extends React.Component {
                       href="/ourworks/community-work"
                     >
                       <strong
-                        style={{ fontSize: "2vh" }}
-                        className="grey-text "
+                        style={{ fontSize: "2vh", color: "#049ABF" }}
+                        
                       >
                         Community work
                       </strong>
@@ -87,7 +87,7 @@ class CustomLayout extends React.Component {
                       className="item"
                       href="/ourworks/school-program"
                     >
-                      <strong style={{ fontSize: "2vh" }} className="grey-text">
+                      <strong style={{ fontSize: "2vh", color: "#049ABF" }} >
                         School program
                       </strong>
                     </MDBDropdownItem>
@@ -100,8 +100,8 @@ class CustomLayout extends React.Component {
                       }
                     >
                       <strong
-                        style={{ fontSize: "2vh" }}
-                        className="grey-text mr-3"
+                        style={{ fontSize: "2vh", color: "#049ABF" }}
+                        className=" mr-3"
                       >
                         Outlawed sessions
                       </strong>
@@ -112,8 +112,8 @@ class CustomLayout extends React.Component {
               <MDBNavItem className="item">
                 <MDBNavLink to="/collaborations">
                   <strong
-                    className="grey-text mr-3"
-                    style={{ fontSize: "2.2vh" }}
+                    className=" mr-3"
+                    style={{ fontSize: "2.2vh" , color: "#049ABF"}}
                   >
                     Collaborations
                   </strong>
@@ -122,8 +122,8 @@ class CustomLayout extends React.Component {
               <MDBNavItem className="item">
                 <MDBNavLink to="/outreach">
                   <strong
-                    className="grey-text mr-3"
-                    style={{ fontSize: "2.2vh" }}
+                    className="mr-3"
+                    style={{ fontSize: "2.2vh", color: "#049ABF" }}
                   >
                     Outreach
                   </strong>
@@ -133,8 +133,8 @@ class CustomLayout extends React.Component {
                 <MDBNavItem className="item">
                   <MDBNavLink to="/login" onClick={this.props.logout}>
                     <strong
-                      className="grey-text mr-3"
-                      style={{ fontSize: "2.2vh" }}
+                      className=" mr-3"
+                      style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
                       Logout
                     </strong>
@@ -144,8 +144,8 @@ class CustomLayout extends React.Component {
                 <MDBNavItem className="item">
                   <MDBNavLink to="/login">
                     <strong
-                      className="grey-text mr-3"
-                      style={{ fontSize: "2.2vh" }}
+                      className=" mr-3"
+                      style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
                       Login
                     </strong>
@@ -159,8 +159,8 @@ class CustomLayout extends React.Component {
                 <MDBNavItem className="item">
                   <MDBNavLink to="/signup">
                     <strong
-                      className="grey-text mr-3"
-                      style={{ fontSize: "2.2vh" }}
+                      className=" mr-3"
+                      style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
                       Signup
                     </strong>
@@ -182,7 +182,7 @@ class CustomLayout extends React.Component {
             {this.props.children}
           </div>
         </Content>
-        <Footer style={{ background: "#fff" }}>OutLawed ©2020</Footer>
+        <Footer style={{ background: "#fff", color: "#049ABF" }}>OutLawed ©2020</Footer>
       </Layout>
     );
   }

@@ -1,14 +1,28 @@
 import "./Communityworks.css"
 import React from "react";
+import Wave from '../images/topwaveq.png'
 import InfiniteCarousel from 'react-leaf-carousel';
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 import {MDBCard, MDBCardBody, MDBMask, MDBView} from "mdbreact";
 import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
+
 class CommunityWork extends React.Component {
   render() {
     return (
-      <div style={{padding:"0px 0px 0px 100px"}}>
-        <MDBCardBody className="my-5 px-5 pb-5 text-left">
+      <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <div style={{padding:"0px 0px 0px 100px" }}>
+        
+        
+        <MDBCardBody className="my-0 px-5 pb-5 text-left">
                     <MDBRow style={{width:"95%"}}>
                     <MDBCol lg="12">
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
@@ -65,6 +79,7 @@ class CommunityWork extends React.Component {
                     </MDBRow>
                 </MDBCardBody>
        
+      </div>
       </div>
     );
   }

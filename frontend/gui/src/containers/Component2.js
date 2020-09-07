@@ -292,8 +292,15 @@ function Component2() {
                 {
                   breakpoint: 300,
                   settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                  },
+                },
+                {
+                  breakpoint: 405,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
                   },
                 },
                 {
@@ -325,8 +332,8 @@ function Component2() {
               slidesToScroll={6}
               slidesToShow={6}
               scrollOnDevice={true}
-              autoCycle={true}
-              cycleInterval={5000}
+              autoCycle={false}
+          
             >
               <div>
                 <figure>
