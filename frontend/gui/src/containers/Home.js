@@ -1,5 +1,5 @@
 
-import InfiniteCarousel from 'react-leaf-carousel';
+//import InfiniteCarousel from 'react-leaf-carousel';
 import React from "react";
 import { Spring } from 'react-spring/renderprops';
 import Component1 from './Component1';
@@ -8,14 +8,20 @@ const Home = () => {
 
   return (
     <>
-    <Component1 style={{width:"98vw"}}/>
+    <div style={{width:"99vw"}}>
+    <Component1 />
+    </div>
+    
     <Spring 
     from = {{opacity:0}}
     to = {{opacity:1}}
     config={{delay:1000,duration:100}}>
       {props=>(
         <div style={props}>
-          <Component2 />
+            <div style={{width:"99vw"}}>
+        <Component2 />
+        </div>
+          {/* <Component2 /> */}
         </div>
       )}</Spring>
     </>

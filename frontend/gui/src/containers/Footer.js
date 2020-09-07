@@ -4,7 +4,7 @@ import {Container} from 'reactstrap';
 
 const Footer= () => {
   return (
-    <MDBFooter className="font-small pt-4 mt-4" style={{background:"#d0eef6"}}>
+    <MDBFooter className="font-small pt-4 mt-4" style={{background:"#d0eef6",width:"99vw"}}>
       <MDBContainer fluid className="text-center text-md-left">
         <Container>
             <MDBRow>

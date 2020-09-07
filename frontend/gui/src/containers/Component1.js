@@ -5,17 +5,17 @@ import './component1.css'
 
 function Component1() {
     return (
-        <Spring 
+        <Spring
         from = {{opacity:0, marginLeft : -1900}}
         to = {{opacity:1,marginLeft : 0}}>
         {props=>(    
-            <div style={props} className="trial">
+            <div style={{props,width:"99vw"}} className="trial">
                 <div style={{
                     color : 'white',
                     float:'left',
                     position: 'relative',
                     height:'90vh',
-                    width : '100vw',
+                    width : '99vw',
                     verticalAlign:'middle',
                     backgroundImage: `url(${Background})`,
                     backgroundPosition: 'center',

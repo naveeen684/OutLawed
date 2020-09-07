@@ -25,8 +25,8 @@ const menu = (
 class CustomLayout extends React.Component {
   render() {
     return (
-      <Layout className="layout" style={{width:"100vw"}} >
-        <Header className="navbar" style={{width:"98vw"}}>
+      <Layout className="layout" style={{width:"99vw"}} >
+        <Header className="navbar" style={{width:"99vw"}}>
           <div className="logo">
             <img src={logo} alt="Logo" className="logo_img" />
           </div>

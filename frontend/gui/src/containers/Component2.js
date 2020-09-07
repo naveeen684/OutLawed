@@ -3,7 +3,7 @@ import { Spring } from 'react-spring/renderprops';
 import InfiniteCarousel from 'react-leaf-carousel';
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 import {MDBCard, MDBCardBody, MDBMask, MDBView} from "mdbreact";
-import { Container } from 'reactstrap';
+//import { Container } from 'reactstrap';
 
 function Component2() {
     return (
