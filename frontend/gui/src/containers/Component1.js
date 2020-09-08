@@ -56,7 +56,7 @@ function Component1() {
                               style={{
                                 color: "#fafafa",
                                 fontFamily: "Montserrat",
-                                fontSize: "11vh",
+                                fontSize: "10vh",
                               }}
                             >
                               OUTLAWED

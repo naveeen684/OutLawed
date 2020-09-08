@@ -93,7 +93,8 @@ class CustomLayout extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem
                       className="item"
-                      href={
+                      href= 
+                      {
                         this.props.isAuthenticated
                           ? "/ourworks/outlawed-sessions"
                           : "/login"
