@@ -11,7 +11,7 @@ class CommunityWork extends React.Component {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
       
-      <div style={{padding:"10vw 0px 0px 100px" }}>
+      <div style={{padding:"10vw 0px 0px 5vw" }}>
         
         
         <MDBCardBody className="my-0 px-5 pb-5 text-left">

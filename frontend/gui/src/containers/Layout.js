@@ -71,7 +71,7 @@ class CustomLayout extends React.Component {
                       Our works
                     </strong>
                   </MDBDropdownToggle>
-                  <MDBDropdownMenu>
+                  <MDBDropdownMenu >
                     <MDBDropdownItem
                       className="item"
                       href="/ourworks/community-work"
@@ -93,13 +93,13 @@ class CustomLayout extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem
                       className="item"
-                      href= 
-                      {
+                      href="/ourworks/outlawed-sessions">
+                      {/* {
                         this.props.isAuthenticated
                           ? "/ourworks/outlawed-sessions"
                           : "/login"
-                      }
-                    >
+                      } */}
+                    
                       <strong
                         style={{ fontSize: "2vh", color: "#049ABF" }}
                         className=" mr-3"
