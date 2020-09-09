@@ -1,6 +1,7 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 import InfiniteCarousel from "react-leaf-carousel";
+
 import {
   MDBJumbotron,
   MDBBtn,
@@ -24,7 +25,7 @@ function Component2() {
       config={{ delay: 5000, duration: 1000 }}
     >
       {(props) => (
-        <div style={{ props }}>
+        <div style={{ props,padding:"0vw 0px 0px 5vw" }}>
           <div class="innermission">
             <MDBContainer
               className="mission"
@@ -138,17 +139,24 @@ function Component2() {
                         </a>
                         </MDBView>
                     </MDBCol> */}
-              <MDBCol md="5">
-                <MDBView className="responsive mb-lg-4 mb-4" hover waves>
+                    <MDBCol lg="1"></MDBCol>
+              <MDBCol lg="4" breakpoints={[
+                {
+                  breakpoint: 1500,
+                  settings: {
+                    width:"100%"
+                  },
+                }]} 
+                >
+                    <br></br>
+         
+                    
                   <img
                     src={require("./images/three.png")}
-                    className="img-fluid"
+                    className="img-fluid fixed"
                     alt=""
                   />
-                  <a href="#!">
-                    <MDBMask overlay="white-slight" />
-                  </a>
-                </MDBView>
+                 
               </MDBCol>
             </MDBRow>
             <br></br>
@@ -211,7 +219,7 @@ function Component2() {
                 </p>
               </MDBCol>
               <MDBCol md="1"></MDBCol>
-              <MDBCol md="2">
+              <MDBCol md="2" >
                 <MDBCard
                   style={{
                     width: "177px",
@@ -249,6 +257,7 @@ function Component2() {
             <MDBRow>
               <MDBCol lg="7">
                 <br></br>
+                <br></br>
                 <h3
                   className="font-weight-bold mb-3 p-0"
                   style={{
@@ -284,7 +293,7 @@ function Component2() {
           </MDBCardBody>
           <div
             style={{
-              width: "99%",
+              width: "99%"
             }}
           >
             <InfiniteCarousel
