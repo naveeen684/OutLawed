@@ -3,6 +3,8 @@ import { Form, Input, Button, Spin } from "antd";
 import { NavLink } from "react-router-dom";
 import { LoadingOutlined } from "@ant-design/icons";
 import { connect } from "react-redux";
+import Logo from './images/logos.png';
+import { MDBContainer, MDBRow, MDBCol, MDBBtn } from 'mdbreact';
 import * as actions from "../store/actions/auth";
 import { UserOutlined, LockOutlined, GoogleOutlined } from "@ant-design/icons";
 import GoogleLogin from "react-google-login";
@@ -43,99 +45,143 @@ class Login extends React.Component {
         {this.props.loading ? (
           <Spin indicator={antIcon} />
         ) : (
-          <Form
-            {...layout}
-            name="basic"
-            initialValues={{ remember: true }}
-            onFinish={this.onFinish}
-            onFinishFailed={this.onFinishFailed}
-            style={{
-              maxWidth: "500px",
-            }}
-          >
-            <Form.Item
-              name="email"
-              rules={[
-                {
-                  type: "email",
-                  message: "The input is not valid E-mail!",
-                },
-                {
-                  required: true,
-                  message: "Please input your E-mail!",
-                },
-              ]}
-            >
-              <Input
-                prefix={<GoogleOutlined className="site-form-item-icon" />}
-                type="email"
-                placeholder="Email"
-              />
-            </Form.Item>
-            {this.props.error ? (
-              <p style={{ color: "red" }}>
-                {this.props.error.response.data["non_field_errors"]}
-              </p>
-            ) : (
-              <></>
-            )}
-
-            <Form.Item
-              name="password"
-              rules={[
-                { required: true, message: "Please input your password!" },
-              ]}
-            >
-              <Input.Password
-                prefix={<LockOutlined className="site-form-item-icon" />}
-                type="password"
-                placeholder="Password"
-              />
-            </Form.Item>
-            {this.props.error ? (
-              <p style={{ color: "red" }}>
-                {this.props.error.response.data["password1"]}
-              </p>
-            ) : (
-              <></>
-            )}
-
-            <Form.Item>
-              <Button
-                type="primary"
-                htmlType="submit"
-                className="login-form-button"
-                style={{
-                  width: "100%",
+          <>
+          <MDBRow style={{width:"100vw",height:"98vh"}}>
+            <MDBCol lg="8" >
+            <br></br>
+                  <Form
+                    {...layout}
+                    name="basic"
+                    initialValues={{ remember: true }}
+                    onFinish={this.onFinish}
+                    onFinishFailed={this.onFinishFailed}
+                    style={{
+                    paddingLeft:"5vw",
+                    marginLeft:"5vw",
+                    height:"100%",
+                    marginTop:"100px",
+                    marginBottom:"auto"
                 }}
-              >
-                {this.props.loading ? <Spin indicator={antIcon} /> : "Log in"}
-              </Button>
-              <h1>LOGIN WITH GOOGLE</h1>
-              <GoogleLogin
-                clientId="1064931780182-kbk5iorqkft4btnchqij4obalcdc0ste.apps.googleusercontent.com"
-                buttonText="LOGIN WITH GOOGLE"
-                onSuccess={this.googleResponse}
-                onFailure={this.googleResponse}
-                cookiePolicy={"single_host_origin"}
-              />
-              <br />
-              Or{" "}
-              <NavLink style={{ marginRight: "10px" }} to="/signup">
-                register now!
-              </NavLink>
-            </Form.Item>
-            <Form.Item>
-              <Form.Item
-                style={{
-                  float: "right",
-                  margin: "0px",
-                }}
-              >
-                Forgot password
-              </Form.Item>
-            </Form.Item>
-          </Form>
+                  >
+                  <h1 style={{color: "#016B86",
+                    fontFamily: "Montserrat",
+                    fontSize: "36px",
+                    fontWeight:"normal"
+                    }} className="text-left" ><strong>LOGIN</strong></h1>
+                    <br></br>
+                    
+                    <Form.Item
+                      name="email"
+                      rules={[
+                        {
+                          type: "email",
+                          message: "The input is not valid E-mail!",
+                        },
+                        {
+                          required: true,
+                          message: "Please input your E-mail!",
+                        },
+                      ]}
+                    >
+                      <Input
+                        prefix={<GoogleOutlined className="site-form-item-icon" />}
+                        type="email"
+                        style={{width:"100%",height:"5vh",borderRadius:"5px",borderColor:"black"}}
+                        placeholder="Email address"
+                      />
+                    </Form.Item>
+                    {this.props.error ? (
+                      <p style={{ color: "red" }}>
+                        {this.props.error.response.data["non_field_errors"]}
+                      </p>
+                    ) : (
+                      <></>
+                    )}
+
+                    <Form.Item
+                      name="password"
+                      rules={[
+                        { required: true, message: "Please input your password!" },
+                      ]}
+                    >
+                      <Input.Password
+                        prefix={<LockOutlined className="site-form-item-icon" />}
+                        type="password"
+                        style={{width:"100%",height:"5vh",borderRadius:"5px",borderColor:"black"}}
+                        placeholder="Password"
+                      />
+                    </Form.Item>
+                    {this.props.error ? (
+                      <p style={{ color: "red" }}>
+                        {this.props.error.response.data["password1"]}
+                      </p>
+                    ) : (
+                      <></>
+                    )}
+
+                    <Form.Item>
+                      {/* <Button
+                        type="primary"
+                        htmlType="submit"
+                        className="login-form-button"
+                        style={{
+                          width: "100%",
+                        }}
+                      >
+                        {this.props.loading ? <Spin indicator={antIcon} /> : "Log in"}
+                      </Button> */}
+                      <MDBBtn
+                          style={{
+                         
+                            fontFamily: "Montserrat",
+                            color:"white"
+                          }}
+                          htmlType="submit"
+                          color = "#006064 cyan darken-3"
+                          className="mb-lg-0 mb-4 login-form-button waves-light"
+                        >
+                        {this.props.loading ? <Spin indicator={antIcon} /> : "Sign in"}
+                        </MDBBtn>
+                  <br></br>
+                  <br></br>
+                  <br></br>
+                      {/* <h3 style={{color:"#016B86",textAlign:"center"}}>Or</h3> */}
+                      <GoogleLogin 
+                        clientId="1064931780182-kbk5iorqkft4btnchqij4obalcdc0ste.apps.googleusercontent.com"
+                        buttonText="LOGIN WITH GOOGLE"
+                        onSuccess={this.googleResponse}
+                        onFailure={this.googleResponse}
+                        cookiePolicy={"single_host_origin"}
+                      />
+                      <br />
+                      <br />
+                      <br />
+                      Or{" "}
+                      <NavLink style={{ marginRight: "10px" }} to="/signup">
+                        register now!
+                      </NavLink>
+                    </Form.Item>
+                    {/* <Form.Item>
+                      <Form.Item
+                        style={{
+                          float: "right",
+                          margin: "0px",
+                        }}
+                      >
+                        Forgot password
+                      </Form.Item>
+                    </Form.Item> */}
+                  </Form>
+                  </MDBCol>
+            <MDBCol lg="4">
+               <div style={{backgroundColor:"#016B86",height:"100%",width:"100%",margin:"0px",padding:"0px",backgroundImage: `url(${Logo})`,backgroundRepeat:"no-repeat",backgroundPosition:"right 2vw bottom 5vh"}}>
+                  
+               </div>
+            </MDBCol>
+          </MDBRow>
+        </>
+              
+          
         )}
       </div>
     );

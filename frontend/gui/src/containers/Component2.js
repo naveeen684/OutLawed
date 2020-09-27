@@ -25,11 +25,11 @@ function Component2() {
       config={{ delay: 5000, duration: 1000 }}
     >
       {(props) => (
-        <div style={{ props,padding:"0vw 0px 0px 5vw" }}>
-          <div class="innermission">
+        <div style={{ props }}>
+          <div class="innermission" style={{ props,padding:"0vw 0px 0px 0vw" }}>
             <MDBContainer
               className="mission"
-              style={{ height: "10%", width: "50%" }}
+              style={{ height: "10%", width: "40%" }}
             >
               <MDBRow>
                 <MDBCol>
@@ -51,7 +51,7 @@ function Component2() {
                             level={2}
                             style={{
                               color: "white",
-                              fontSize: "26px",
+                              fontSize: "32px",
                               fontFamily: "Montserrat",
                             }}
                           >
@@ -62,13 +62,11 @@ function Component2() {
                       </MDBCardTitle>
                       <p
                         style={{ fontSize: "15px", fontFamily: "Montserrat" }}
-                        className="mx-2 responsive mb-5 text-center"
+                        className="mx-2  mb-5 text-center"
                       >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Repellat fugiat, laboriosam, voluptatem, optio
-                        vero odio nam sit officia accusamus minus error nisi
-                        architecto nulla ipsum dignissimos. Odit sed qui,
-                        dolorum!
+                      OutLawed  endeavours  to  bolster  citizen  engagement  with  the  law  through
+                       grass-roots level legal education. We  aspire  to  make  the  law  accessible
+                        to individuals across socio-economic backgrounds
                       </p>
                     </MDBCol>
                   </MDBJumbotron>
@@ -76,6 +74,7 @@ function Component2() {
               </MDBRow>
             </MDBContainer>
           </div>
+          <div style={{padding:"0vw 0px 0px 5vw"}}>
           <MDBCardBody className="my-5 px-5 pb-5 text-left">
             <MDBRow>
               <MDBCol lg="7">
@@ -107,17 +106,12 @@ function Component2() {
                     fontSize: "16px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris consectetur elementum ligula eu sagittis. Donec euismod
-                  lectus ac turpis sollicitudin, at placerat nibh euismod.
-                  Aenean ut ultricies magna. Fusce congue, lorem ut sollicitudin
-                  rutrum, nulla neque facilisis tortor, et tempor augue magna at
-                  eros. Aenean et sapien dolor. Nunc venenatis justo vitae felis
-                  suscipit, volutpat venenatis libero interdum. Maecenas
-                  pellentesque tellus et mollis ullamcorper. Etiam quis
-                  ullamcorper lorem. Aenean id hendrerit dolor, id tempus nulla.
-                  Nulla ultrices sit amet massa quis facilisis. Integer
-                  ultricies sdfdhfib sjbkaofoa ropwpeorpqp.
+                OutLawed believes in the power of student-to-student and peer learning.
+                That's why all the teachers we've hired are college students studying law,
+                policy, and humanities. Our teachers are from diverse backgrounds, which allows
+                us to facilitate sessions in regional languages.We teach the most practical, hands-on
+                aspects of the law that individuals are most likely to encounter on a day to day basis.
+
                 </p>
                 <MDBBtn
                   style={{
@@ -126,6 +120,7 @@ function Component2() {
                     fontFamily: "Montserrat",
                   }}
                   size="md"
+                  color="#006064 cyan darken-3"
                   className="mb-lg-0 mb-4 waves-light"
                 >
                   More About Us
@@ -205,17 +200,10 @@ function Component2() {
                     fontSize: "16px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris consectetur elementum ligula eu sagittis. Donec euismod
-                  lectus ac turpis sollicitudin, at placerat nibh euismod.
-                  Aenean ut ultricies ---magna. Fusce congue, lorem ut
-                  sollicitudin rutrum, nulla neque facilisis tortor, et tempor
-                  augue magna at eros. Aenean et sapien --dolor. Nunc venenatis
-                  justo vitae felis suscipit, volutpat venenatis libero
-                  interdum. Maecenas pellentesque tellus et mollis ullamcorper.
-                  Etiam quis ullamcorper lorem. Aenean id hendrerit dolor, id
-                  tempus nulla. Nulla ultrices sit amet massa quis facilisis.
-                  Integer ultricies sdfdhfib sjbkaofoa ropwpeorpqp.
+                Vibha Nadig is a currently a law student, who believes in educational equity and wants to make legal education accessible to everyone.
+                She founded OutLawed to educate school and college students on laws through simplified content that is understandable to persons across
+                socio-economic backgrounds. Other than advocating the cause of legal literacy, she is on the Youth Board at Reap Benefit, loves debating, 
+                and has a new-found passion for baking.   
                 </p>
               </MDBCol>
               <MDBCol md="1"></MDBCol>
@@ -276,24 +264,18 @@ function Component2() {
                     fontSize: "16px",
                   }}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Mauris consectetur elementum ligula eu sagittis. Donec euismod
-                  lectus ac turpis sollicitudin, at placerat nibh euismod.
-                  Aenean ut ultricies ---magna. Fusce congue, lorem ut
-                  sollicitudin rutrum, nulla neque facilisis tortor, et tempor
-                  augue magna at eros. Aenean et sapien --dolor. Nunc venenatis
-                  justo vitae felis suscipit, volutpat venenatis libero
-                  interdum. Maecenas pellentesque tellus et mollis ullamcorper.
-                  Etiam quis ullamcorper lorem. Aenean id hendrerit dolor, id
-                  tempus nulla. Nulla ultrices sit amet massa quis facilisis.
-                  Integer ultricies sdfdhfib sjbkaofoa ropwpeorpqp.
+                OutLawed believes in the power of peer learning and youth-driven change. Our team, including our teachers,
+                entirely consists of college-going students, from law and non-law backgrounds. The Content Team works on the
+                modules that we teach, the Design Team handles our social media and designs the final modules that we use, and
+                the Communication Team manages our interaction with schools, colleges, NGOs, and guest speakers.
                 </p>
               </MDBCol>
             </MDBRow>
           </MDBCardBody>
+          </div>
           <div
             style={{
-              width: "99%"
+              width: "99%",padding:"0vw 0px 0px 5vw"
             }}
           >
             <InfiniteCarousel

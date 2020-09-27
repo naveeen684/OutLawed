@@ -56,8 +56,9 @@ class OutlawedSessions extends React.Component{
                           style={{
                          
                             fontFamily: "Montserrat",
+                            color:"white"
                           }}
-                          color = "info"
+                          color = "#006064 cyan darken-3"
                           className="mb-lg-0 mb-4 waves-light"
                         >
                           More sessions

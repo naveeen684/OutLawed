@@ -1,19 +1,12 @@
-* {
-    box-sizing: border-box;
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
   }
-  
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 0px;
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  @media screen and (max-width: 1000px) {
-    .column {
-      width: 100%;
-    }
-  }
+}

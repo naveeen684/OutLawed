@@ -56,7 +56,7 @@ function Component1() {
                               style={{
                                 color: "#fafafa",
                                 fontFamily: "Montserrat",
-                                fontSize: "10vh",
+                                fontSize: "12vh",
                               }}
                             >
                               OUTLAWED
@@ -64,7 +64,9 @@ function Component1() {
                           </Typography>
 
                           <div>
-                            <p>
+                            <p style={{color: "#fafafa",
+                                fontFamily: "Montserrat",
+                                fontSize: "40px"}}>
                               <strong>
                                 SIMPLIFYING WHAT IT MEANS TO BE AN AWARE CITIZEN
                               </strong>
