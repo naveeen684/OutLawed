@@ -50,7 +50,7 @@ const Footer = () => {
                     <MDBIcon fab icon="youtube" className="pr-1" />{" "}
                     <strong>Youtube</strong>
                   </MDBBtn>
-                  <MDBBtn social="fb" size="md" color="info">
+                  <MDBBtn onClick="facebook.com" social="fb" size="md" color="info">
                     <MDBIcon fab icon="facebook-f" className="pr-1" />{" "}
                     <strong>Facebook</strong>
                   </MDBBtn>
