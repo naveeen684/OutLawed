@@ -9,7 +9,7 @@
           5)npm start
           6)open another terminal
           7)cd outlawed\backend\
-          8)pip install requirements.txt
+          8)pip install -r requirements.txt
           9)cd src
           10)python manage.py migrate
           11)python manage.py makemigrations
