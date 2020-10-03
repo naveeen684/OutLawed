@@ -3,12 +3,15 @@ import { Form, Input, Button, Spin } from "antd";
 import { UserOutlined, LockOutlined, GoogleOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 import { LoadingOutlined } from "@ant-design/icons";
-import { MDBContainer, MDBRow, MDBInput,MDBCol, MDBBtn } from 'mdbreact';
+import { MDBContainer, MDBRow, MDBInput, MDBCol, MDBBtn } from "mdbreact";
 import * as actions from "../store/actions/auth";
-import Logo from './images/logos.png';
+import Logo from "./images/logos.png";
 import { connect } from "react-redux";
+import GoogleLogin from "react-google-login";
 
-const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
+const antIcon = (
+  <LoadingOutlined style={{ fontSize: 20, color: "white" }} spin />
+);
 
 const layout = {
   labelCol: { span: 8 },
@@ -28,19 +31,21 @@ class Signup extends React.Component {
     console.log("Failed:", errorInfo);
   };
 
+  googleResponse = (response) => {
+    this.props.googleAuth(response.accessToken);
+  };
+
   render() {
     let errorMessage = null;
-    
+
     return (
-      <div > 
+      <div>
         {this.props.token ? this.onVerified() : console.log("no")}
-        {this.props.loading ? (
-          <Spin indicator={antIcon} />
-        ) : (
+
         <>
-          <MDBRow style={{width:"100vw",height:"98vh"}}>
-            <MDBCol lg="8" >
-            <br></br>
+          <MDBRow style={{ width: "100vw", height: "98vh" }}>
+            <MDBCol lg="8">
+              <br></br>
               <Form
                 {...layout}
                 name="basic"
@@ -48,19 +53,25 @@ class Signup extends React.Component {
                 onFinish={this.onFinish}
                 onFinishFailed={this.onFinishFailed}
                 style={{
-                  paddingLeft:"5vw",
-                    marginLeft:"5vw",
-                    height:"100%",
-                    marginTop:"100px",
-                    marginBottom:"auto"
+                  paddingLeft: "5vw",
+                  marginLeft: "5vw",
+                  height: "105%",
+                  marginTop: "100px",
+                  marginBottom: "auto",
                 }}
               >
-                <h1 style={{color: "#016B86",
+                <h1
+                  style={{
+                    color: "#016B86",
                     fontFamily: "Montserrat",
-                    fontSize: "30px"
-                    }} className="text-left"><strong>Sign Up</strong></h1>
-                    <br></br>
-                    
+                    fontSize: "30px",
+                  }}
+                  className="text-left"
+                >
+                  <strong>Sign Up</strong>
+                </h1>
+                <br></br>
+
                 <Form.Item
                   name="email"
                   rules={[
@@ -77,12 +88,41 @@ class Signup extends React.Component {
                   <Input
                     prefix={<GoogleOutlined className="site-form-item-icon" />}
                     type="email"
-                    style={{width:"100%",height:"5vh",borderRadius:"5px",borderColor:"black"}}
+                    style={{
+                      width: "100%",
+                      height: "5vh",
+                      borderRadius: "5px",
+                      borderColor: "black",
+                    }}
                     placeholder="Email"
                   />
                 </Form.Item>
                 {this.props.error ? (
-                  <p style={{ color: "red" }}>
+                  <p
+                    style={{
+                      color: "red",
+                      fontSize: "15px",
+                      textAlign: "left",
+                      marginTop: "-10px",
+                      marginTop: "2px",
+                    }}
+                  >
+                    {this.props.error.response.data["non_field_errors"]}
+                  </p>
+                ) : (
+                  <></>
+                )}
+
+                {this.props.error ? (
+                  <p
+                    style={{
+                      color: "red",
+                      fontSize: "15px",
+                      textAlign: "left",
+                      marginTop: "-10px",
+                      marginTop: "2px",
+                    }}
+                  >
                     {this.props.error.response.data["email"]}
                   </p>
                 ) : (
@@ -98,12 +138,25 @@ class Signup extends React.Component {
                   <Input.Password
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     type="password"
-                    style={{width:"100%",height:"5vh",borderRadius:"5px",borderColor:"black"}}
+                    style={{
+                      width: "100%",
+                      height: "5vh",
+                      borderRadius: "5px",
+                      borderColor: "black",
+                    }}
                     placeholder="Password"
                   />
                 </Form.Item>
                 {this.props.error ? (
-                  <p style={{ color: "red" }}>
+                  <p
+                    style={{
+                      color: "red",
+                      fontSize: "15px",
+                      textAlign: "left",
+                      marginTop: "-10px",
+                      marginTop: "2px",
+                    }}
+                  >
                     {this.props.error.response.data["password1"]}
                   </p>
                 ) : (
@@ -132,25 +185,52 @@ class Signup extends React.Component {
                   <Input.Password
                     prefix={<LockOutlined className="site-form-item-icon" />}
                     type="password"
-                    style={{width:"100%",height:"5vh",borderRadius:"5px",borderColor:"black"}}
+                    style={{
+                      width: "100%",
+                      height: "5vh",
+                      borderRadius: "5px",
+                      borderColor: "black",
+                    }}
                     placeholder="Confirm Password"
                   />
                 </Form.Item>
                 <Form.Item>
-                  <MDBBtn
-                          style={{
-                         
-                            fontFamily: "Montserrat",
-                            color:"white"
-                          }}
-                          htmlType="submit"
-                          color = "#006064 cyan darken-3"
-                          className="mb-lg-0 mb-4 login-form-button waves-light"
-                        >
-                          Sign up
-                        </MDBBtn>
+                  <br />
+                  <Button
+                    style={{
+                      fontFamily: "Montserrat",
+                      color: "white",
+                      backgroundColor: "#006064",
+                      width: "40%",
+                      padding: "2%",
+                      height: "100%",
+                    }}
+                    htmlType="submit"
+                    // color="#006064 cyan darken-3"
+                    size="large"
+                    className="mb-lg-0"
+                  >
+                    {this.props.loading ? (
+                      <Spin indicator={antIcon} />
+                    ) : (
+                      "Sign up"
+                    )}
+                  </Button>
                   <br></br>
                   <br></br>
+                  <br></br>
+                  {/* <h3 style={{color:"#016B86",textAlign:"center"}}>Or</h3> */}
+                  <GoogleLogin
+                    className="Google"
+                    clientId="1064931780182-kbk5iorqkft4btnchqij4obalcdc0ste.apps.googleusercontent.com"
+                    buttonText="SIGNUP WITH GOOGLE"
+                    onSuccess={this.googleResponse}
+                    onFailure={this.googleResponse}
+                    cookiePolicy={"single_host_origin"}
+                  />
+                  <br />
+                  <br />
+                  <br />
                   <NavLink style={{ marginRight: "10px" }} to="/login">
                     Already have an account? Login!
                   </NavLink>
@@ -158,15 +238,23 @@ class Signup extends React.Component {
               </Form>
             </MDBCol>
             <MDBCol lg="4">
-               <div style={{backgroundColor:"#016B86",height:"100%",width:"100%",margin:"0px",padding:"0px",backgroundImage: `url(${Logo})`,backgroundRepeat:"no-repeat",backgroundPosition:"right 2vw bottom 5vh"}}>
-                  
-               </div>
+              <div
+                style={{
+                  backgroundColor: "#016B86",
+                  height: "106.6%",
+                  width: "106%",
+                  margin: "0px",
+                  padding: "0px",
+                  backgroundImage: `url(${Logo})`,
+                  backgroundSize: "20%",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "right 2vw bottom 5vh",
+                }}
+                className="sideBanner"
+              ></div>
             </MDBCol>
           </MDBRow>
         </>
-          
-        )}
-       
       </div>
     );
   }
@@ -184,6 +272,7 @@ const mapDispathToprops = (dispatch) => {
   return {
     onAuth: (email, password1, password2) =>
       dispatch(actions.authSignup(email, password1, password2)),
+    googleAuth: (accesstoken) => dispatch(actions.googleLogin(accesstoken)),
   };
 };
 

@@ -15,6 +15,7 @@
 
 
 
+
 .logo_img {
     width: 50px;
     height: 50px;
@@ -46,6 +47,28 @@
     .mission {
         padding: 0% !important;
     }
+
+    .Google {
+        width: 40% !important;
+        font-size: 60% !important;
+    }
+}
+
+@media (max-width:405px) {
+
+    .Google {
+        width: 50% !important;
+        font-size: 70% !important;
+    }
+}
+
+
+@media (max-width:380px) {
+
+    .Google {
+        width: 100% !important;
+        font-size: 80% !important;
+    }
 }
 
 @media (max-width:300px) {
@@ -55,5 +78,11 @@
 
     .responsive {
         font-size: 13px !important;
+    }
+}
+
+@media (max-width:995px) {
+    .sideBanner {
+        display: none;
     }
 }
