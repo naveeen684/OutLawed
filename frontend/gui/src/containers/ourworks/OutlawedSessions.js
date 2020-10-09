@@ -21,7 +21,7 @@ class OutlawedSessions extends React.Component{
                         <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} />
                         <br></br>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur elementum ligula eu sagittis. Donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. Aenean ut ultricies magna.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur elementum ligula eu sagittis. Donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. Aenean ut ultricies magna. Fusce congue, lorem ut sollicitudin rutrum, nulla neque facilisis tortor, et tempor augue magna at eros. Aenean et sapien dolor. Nunc venenatis justo vitae felis suscipit, volutpat venenatis libero interdum.
+                        The unexpected lockdown in the country brought unprecedented challenges with it. OutLawed, in an effort to bridge the gap between citizens and the law, came up with a series called Out Loud. It was a series of webinars that discussed legal perspectives on a number of societal issues that resonate with young minds. It was an effort to facilitate community discussion from a legal point of view.
                         </p>
                     </MDBCol>
                     </MDBRow>
@@ -33,23 +33,23 @@ class OutlawedSessions extends React.Component{
                         </h3>
 
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        1. lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris consectetur elementum ligula eu sagittis. donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. aenean.
+                        1. Student-led and curated sessions that included active debate and discussion from the audience. 
                         </p>
                         <br></br>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        2. lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris consectetur elementum ligula eu sagittis. donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. aenean.
+                        2. Talks and Q&A sessions with legal stalwarts. We worked with over 10 NGOs, companies, and senior advocates!
                         </p>
                         <br></br>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        3. lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris consectetur elementum ligula eu sagittis. donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. aenean.
+                        3. Through the Out Loud series, we tried to explore topics like gender, sexuality, bond markets, mediation, caste, and the like.  
                         </p>
                         <br></br>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        4. lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris consectetur elementum ligula eu sagittis. donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. aenean.
+                        4. Moreover, it was an attempt to bolster community engagement with the law in a manner that was accessible and engaging.  
                         </p>
                         <br></br>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        5. lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris consectetur elementum ligula eu sagittis. donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. aenean.
+                        5. Over the course of ten weeks of the series, we witnessed very active participation from attendees from diverse backgrounds, reaching around 300 people in some sessions! 
                         </p>
                         <br></br>
                         <MDBBtn
@@ -71,7 +71,7 @@ class OutlawedSessions extends React.Component{
                             <br></br>
                             <br></br>
                           
-                            <img  src={require("../images/bglap.png")} style={{width: "45vw", height:"30vw",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
+                            <img  src={require("../images/bglap.png")} style={{width: "40vw", height:"25vw",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
                           </MDBCol>
                           {/* <MDBCol sm="3"></MDBCol>
                           <MDBCol sm="3"></MDBCol>

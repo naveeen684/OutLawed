@@ -22,9 +22,7 @@ class CommunityWork extends React.Component {
                         </h3>
                         <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} />
                         <br></br>
-                        <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                            While all of our OutLawed Out Loud sessions have been free, we decided to conduct one paid session and use the proceeds to provide rations to the labourers and other vulnerable groups affected by the Covid-19 situation. 
-                        </p>
+                        
                     </MDBCol>
                     </MDBRow>
                     <br></br>
@@ -34,7 +32,7 @@ class CommunityWork extends React.Component {
                         <strong>Rations for low income households</strong>
                         </h3>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        Through our paid session, which was conducted by Dr. Aditya Sondhi on the constitutional issues surrounding the lockdown, we raised Rs. 50,000. We could buy 800+ kg of ration which were donated to more than 120 impoverished families and this would not have been possible without the generous donations by our patrons and Dr. Aditya Sondhi.
+                        While all Out Loud sessions were free of cost, we conducted one paid session and used the proceeds to provide rations to wage workers and other vulnerable groups affected by the COVID-19 pandemic. This paid session was conducted by Dr. Aditya Sondhi, on the constitutional issues surrounding the lockdown. We raised Rs. 50,000 and could buy 800+ kgs of rations, which were donated to more than 120 impoverished families. 
                         </p>
 
                         <br></br>
@@ -42,7 +40,7 @@ class CommunityWork extends React.Component {
                         <strong>Mission Aahan Vaahan</strong>
                         </h3>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        The migrant work crisis shook the conscience of the whole country and we tried our best to contribute and help the migrants reach their homes during the crisis of the pandemic. We started a volunteering campaign to support the Aahan Vaahan mission aimed at helping migrant workers reach their homes. The volunteers could sign up through our campaign and raise funds individually for which they received a certificate and public recognition. This campaign too was extremely successful and our volunteers collectively raised over Rs. 1,00,000 for the Mission. We are extremely thankful to all our patrons who supported us in helping the underprivileged in times of difficulty.
+                        We also started a volunteering campaign to support the Aahan Vaahan mission that aimed at helping migrant workers reach their homes. This campaign was extremely successful and our volunteers raised over Rs. 1,00,000 for the Mission. 
                         </p>
                     </MDBCol>
                     <MDBCol lg="1"></MDBCol>

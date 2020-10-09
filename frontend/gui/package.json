@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^7.2.1",
     "antd": "^4.5.4",
     "axios": "^0.19.2",
+    "materialize-css": "^1.0.0-rc.2",
     "mdbreact": "^4.27.0",
     "npm-install-missing": "^0.1.4",
     "react": "^16.13.1",

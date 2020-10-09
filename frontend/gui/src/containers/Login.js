@@ -236,7 +236,7 @@ class Login extends React.Component {
               <div
                 style={{
                   backgroundColor: "#016B86",
-                  height: "106.6%",
+                  height: "105.5%",
                   width: "106%",
                   margin: "0px",
                   padding: "0px",

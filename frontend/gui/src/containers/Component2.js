@@ -64,9 +64,7 @@ function Component2() {
                         style={{ fontSize: "15px", fontFamily: "Montserrat" }}
                         className="mx-2  mb-5 text-center"
                       >
-                      OutLawed  endeavours  to  bolster  citizen  engagement  with  the  law  through
-                       grass-roots level legal education. We  aspire  to  make  the  law  accessible
-                        to individuals across socio-economic backgrounds
+                      OutLawed endeavours to bolster citizen engagement with the law through grassroots-level legal education. We aspire to make knowledge of the law accessible to individuals across socio-economic backgrounds. 
                       </p>
                     </MDBCol>
                   </MDBJumbotron>
@@ -106,11 +104,9 @@ function Component2() {
                     fontSize: "16px",
                   }}
                 >
-                OutLawed believes in the power of student-to-student and peer learning.
-                That's why all the teachers we've hired are college students studying law,
-                policy, and humanities. Our teachers are from diverse backgrounds, which allows
-                us to facilitate sessions in regional languages.We teach the most practical, hands-on
-                aspects of the law that individuals are most likely to encounter on a day to day basis.
+                OutLawed believes in the power of student-to-student and peer learning. In furtherance of this, we engage college students who are studying law, policy, and humanities as our teachers. They are from diverse backgrounds, which allows us to conduct our sessions in regional languages as well. 
+                We teach the most practical and hands-on aspects of the law that individuals are most likely to encounter on a daily basis.
+
 
                 </p>
                 <MDBBtn
@@ -200,10 +196,7 @@ function Component2() {
                     fontSize: "16px",
                   }}
                 >
-                Vibha Nadig is a currently a law student, who believes in educational equity and wants to make legal education accessible to everyone.
-                She founded OutLawed to educate school and college students on laws through simplified content that is understandable to persons across
-                socio-economic backgrounds. Other than advocating the cause of legal literacy, she is on the Youth Board at Reap Benefit, loves debating, 
-                and has a new-found passion for baking.   
+                Vibha Nadig is currently a law student, who believes in educational equity and wants to make legal education accessible to everyone. She founded OutLawed to educate school and college students on laws through simplified content that is understandable to persons across socio-economic and regional backgrounds. Apart from advocating the cause of legal literacy, she is on the Youth Board at Reap Benefit, loves debating, and has a new-found passion for baking.     
                 </p>
               </MDBCol>
               <MDBCol md="1"></MDBCol>
@@ -264,10 +257,7 @@ function Component2() {
                     fontSize: "16px",
                   }}
                 >
-                OutLawed believes in the power of peer learning and youth-driven change. Our team, including our teachers,
-                entirely consists of college-going students, from law and non-law backgrounds. The Content Team works on the
-                modules that we teach, the Design Team handles our social media and designs the final modules that we use, and
-                the Communication Team manages our interaction with schools, colleges, NGOs, and guest speakers.
+                OutLawed believes in the power of youth-driven change. Our teams, including our teachers, entirely consist of college-going students, from law and non-law backgrounds. The Content Team works on the modules that we teach, the Design Team handles our social media and designs the final modules that we use, and the Communication Team manages our interaction with schools, colleges, NGOs, and guest speakers.
                 </p>
               </MDBCol>
             </MDBRow>
