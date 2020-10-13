@@ -109,14 +109,14 @@ function Component2() {
 
 
                 </p>
-                <MDBBtn
+                <MDBBtn href="/ourworks/school-program"
                   style={{
-                    backgroundColor: "#68B8CC",
                     color: "white",
+                    fontWeight:"bold",
                     fontFamily: "Montserrat",
                   }}
                   size="md"
-                  color="#006064 cyan darken-3"
+                  color="#4dd0e1 cyan lighten-2"
                   className="mb-lg-0 mb-4 waves-light"
                 >
                   More About Us
@@ -186,7 +186,7 @@ function Component2() {
                     fontFamily: "Montserrat",
                   }}
                 >
-                  <strong>OUR FOUNDER</strong>
+                  <strong>Our Founder</strong>
                 </h3>
                 <p
                   className="text-muted"

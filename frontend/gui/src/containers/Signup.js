@@ -43,7 +43,7 @@ class Signup extends React.Component {
         {this.props.token ? this.onVerified() : console.log("no")}
 
         <>
-          <MDBRow style={{ width: "100vw", height: "98vh" }}>
+          <MDBRow style={{ width: "100vw", height: "84vh" }}>
             <MDBCol lg="8">
               <br></br>
               <Form

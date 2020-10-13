@@ -3,7 +3,7 @@ import Wave from './images/topwaveq.png'
 import InfiniteCarousel from 'react-leaf-carousel';
 import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
 import {MDBCard, MDBCardBody, MDBMask, MDBView} from "mdbreact";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
+
 
 class Collaborations extends React.Component {
   render() {
@@ -51,7 +51,7 @@ class Collaborations extends React.Component {
                   },
                 },
                 {
-                  breakpoint: 405,
+                  breakpoint: 473,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -65,29 +65,34 @@ class Collaborations extends React.Component {
                   },
                 },
                 {
-                  breakpoint: 1080,
+                  breakpoint: 990,
                   settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                   },
                 },
                 {
-                  breakpoint: 1600,
+                  breakpoint: 1300,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                  },
+                },
+                {
+                  breakpoint: 1650,
                   settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                   },
                 },
               ]}
-              dots={false}
-              showSides={true}
-              sidesOpacity={0.5}
-              sideSize={0.1}
+              //paging={true}
+              arrow={true}
+              showSides={false}
               slidesToScroll={3}
               slidesToShow={3}
               scrollOnDevice={true}
-              autoCycle={false}
-          
+              autoCycle={false}       
             >
               <div>
                   <img
@@ -95,6 +100,10 @@ class Collaborations extends React.Component {
                       width: "150px",
                       height: "169px",
                       borderRadius: "10%",
+                      marginLeft:"auto",
+                      marginRight:"auto",
+                      display:"block"
+
                     }}
                     alt=""
                     src={require("./images/c1.png")}
@@ -106,6 +115,10 @@ class Collaborations extends React.Component {
                       width: "150px",
                       height: "169px",
                       borderRadius: "10%",
+                      marginLeft:"auto",
+                      marginRight:"auto",
+                      display:"block"
+                      
                     }}
                     alt=""
                     src={require("./images/c2.png")}
@@ -117,6 +130,9 @@ class Collaborations extends React.Component {
                       width: "150px",
                       height: "169px",
                       borderRadius: "10%",
+                      marginLeft:"auto",
+                      marginRight:"auto",
+                      display:"block"
                     }}
                     alt=""
                     src={require("./images/c3.png")}
@@ -128,6 +144,9 @@ class Collaborations extends React.Component {
                       width: "150px",
                       height: "169px",
                       borderRadius: "10%",
+                      marginLeft:"auto",
+                      marginRight:"auto",
+                      display:"block"
                     }}
                     alt=""
                     src={require("./images/c4.png")}
@@ -139,11 +158,14 @@ class Collaborations extends React.Component {
                       width: "150px",
                       height: "169px",
                       borderRadius: "10%",
+                      marginLeft:"auto",
+                      marginRight:"auto",
+                      display:"block"
                     }}
                     alt=""
                     src={require("./images/c5.png")}
                   />
-              </div> 
+              </div>
             </InfiniteCarousel>
                     </MDBCol>
                     </MDBRow>

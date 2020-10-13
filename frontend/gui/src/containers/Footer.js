@@ -93,7 +93,7 @@ const Footer = () => {
                     </li>
                     <li className="list-unstyled">
                       <a href="#!" style={{ color: "#049ABF" }}>
-                        School Programs
+                       Legal awareness workshops
                       </a>
                     </li>
                     <li className="list-unstyled">
@@ -116,16 +116,6 @@ const Footer = () => {
                     <li className="list-unstyled">
                       <a href="#!" style={{ color: "#049ABF" }}>
                         Awareness Campaigns
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="#!" style={{ color: "#049ABF" }}>
-                        Reap Benefit
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="#!" style={{ color: "#049ABF" }}>
-                        Content Work
                       </a>
                     </li>
                     <li className="list-unstyled">

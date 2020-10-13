@@ -39,7 +39,7 @@ class CustomLayout extends React.Component {
           <MDBNavbarBrand>
             <MDBNavLink to="/">
               <div className="logo">
-                <img src={logo} alt="Logo" className="logo_img" />
+                <img src={logo} style={{marginLeft:"4vw"}} alt="Logo" className="logo_img" />
               </div>
             </MDBNavLink>
           </MDBNavbarBrand>
@@ -163,7 +163,7 @@ class CustomLayout extends React.Component {
                       className=" mr-3"
                       style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
-                      Signup
+                      Blog
                     </strong>
                   </MDBNavLink>
                 </MDBNavItem>
