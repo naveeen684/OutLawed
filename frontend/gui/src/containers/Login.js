@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 import { LoadingOutlined } from "@ant-design/icons";
 import { connect } from "react-redux";
 import Logo from "./images/logos.png";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn } from "mdbreact";
+import {  MDBRow, MDBCol } from "mdbreact";
 import * as actions from "../store/actions/auth";
-import { UserOutlined, LockOutlined, GoogleOutlined } from "@ant-design/icons";
+import { LockOutlined, GoogleOutlined } from "@ant-design/icons";
 import GoogleLogin from "react-google-login";
 
 const layout = {
@@ -32,14 +32,12 @@ class Login extends React.Component {
   };
 
   googleResponse = (response) => {
+    console.log("google auth");
     this.props.googleAuth(response.accessToken);
   };
 
   render() {
-    let errorMessage = null;
-    if (this.props.error) {
-      errorMessage = <p style={{ color: "red" }}>{this.props.error.message}</p>;
-    }
+    
     return (
       <div>
         {this.props.token ? this.onVerified() : console.log("no")}
@@ -122,7 +120,6 @@ class Login extends React.Component {
                       fontSize: "15px",
                       textAlign: "left",
                       marginTop: "-10px",
-                      marginTop: "2px",
                     }}
                   >
                     {this.props.error.response.data["email"]}
@@ -208,9 +205,7 @@ class Login extends React.Component {
                     clientId="1064931780182-kbk5iorqkft4btnchqij4obalcdc0ste.apps.googleusercontent.com"
                     buttonText="LOGIN WITH GOOGLE"
                     onSuccess={this.googleResponse}
-                    onFailure={this.googleResponse}
                     cookiePolicy={"single_host_origin"}
-                    isSignedIn={true}
                   />
                   <br />
                   <br />

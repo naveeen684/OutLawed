@@ -1,10 +1,10 @@
 import "./Communityworks.css"
 import React from "react";
 import Wave from '../images/topwaveq.png'
-import InfiniteCarousel from 'react-leaf-carousel';
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
-import {MDBCard, MDBCardBody, MDBMask, MDBView} from "mdbreact";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
+// import InfiniteCarousel from 'react-leaf-carousel';
+import {  MDBRow, MDBCol } from "mdbreact";
+import { MDBCardBody} from "mdbreact";
+// import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
 
 class CommunityWork extends React.Component {
   render() {

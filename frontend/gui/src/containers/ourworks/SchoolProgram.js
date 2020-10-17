@@ -1,4 +1,4 @@
-import { MDBCol, MDBContainer, MDBRow } from "mdbreact";
+import { MDBCol, MDBRow } from "mdbreact";
 import styled from 'styled-components';
 import SchoolCarousel from "./SchoolCarousel";
 import Wave from '../images/topwaveq.png';
@@ -43,16 +43,16 @@ class SchoolProgram extends React.Component {
                   <br/><br />They are made to undergo two mandatory training programs: </p></div>
                   <div>
                   <dl style={{color:"#6A6680",alignItems:"start"}}>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px"}}><img src={require("../images/icon_tick.svg")} style={{paddingRight:"10px"}}/>{" "}The anti-sexual harassment and gender sensitisation workshop</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}The anti-sexual harassment and gender sensitisation workshop</dd>
                     <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}>We believe in creating a safe space for learning. To ensure this, all our teachers are well informed of codes of conduct that they must follow to ensure that everyone is respected, and feels safe.</dd>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px"}}><img src={require("../images/icon_tick.svg")} style={{paddingRight:"10px"}}/>{" "}The teaching program</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}The teaching program</dd>
                     <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}>While our teachers may be students themselves, they have been through comprehensive sessions with experienced teachers to learn about good teaching practices. They have been taught how to facilitate an interactive and fruitful learning experience for students. </dd></dd>
                   </dl>
                 </div>
               </MDBCol>
               <MDBCol sm="0" md="1"></MDBCol>
               <MDBCol md="6" sm="12">
-                <img src={require("../images/spcoll.png")} style={{maxWidth:"70%"}}/>
+                <img src={require("../images/spcoll.png")} alt="members" style={{maxWidth:"70%"}}/>
               </MDBCol>
               <MDBCol md="6" sm="12">
                 <MDBRow style={{padding:"5vh 0 1vh"}}>
@@ -65,9 +65,9 @@ class SchoolProgram extends React.Component {
                 <div >
                   <dl style={{color:"#6A6680",alignItems:"start"}}>
                     <dt style={{textAlign:"left",color:"#68B8CC",fontSize:"20px",fontWeight:"bold",paddingTop:"2vh"}}>OutLawed has three principles that guide our workshops. </dt>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} style={{paddingRight:"10px"}}/>{" "}First, we believe in the power of self-learning. Our modules are created to allow our teachers to facilitate sessions, while empowering students to discover and create by themselves. We often ask students to step into the shoes of legislators and create laws for women’s empowerment, cyber security, and consumer protection.</dd>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} style={{paddingRight:"10px"}}/>{" "}Second, we believe in catering to student needs. As students ourselves, we know that having very little to say in the process hampers the learning experience. OutLawed has committed itself to teaching in the language that students are most comfortable with. We also regularly update our modules and activities based on the target audience and allow flexibility in choosing the topics to be taught. You can see clips of our sessions <a target="_blank" href="https://outlawedind.wordpress.com/">here</a>.</dd>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} style={{paddingRight:"10px"}}/>{" "}Third, we believe in following-up with our students. Our engagement does not end when the workshop ends. We have created activities that keep students engaged post-session! You can check out the post-session debate and discussion by our students <a target="_blank" href="https://outlawedind.wordpress.com/">here</a>.</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}First, we believe in the power of self-learning. Our modules are created to allow our teachers to facilitate sessions, while empowering students to discover and create by themselves. We often ask students to step into the shoes of legislators and create laws for women’s empowerment, cyber security, and consumer protection.</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}Second, we believe in catering to student needs. As students ourselves, we know that having very little to say in the process hampers the learning experience. OutLawed has committed itself to teaching in the language that students are most comfortable with. We also regularly update our modules and activities based on the target audience and allow flexibility in choosing the topics to be taught. You can see clips of our sessions <a target="_blank" rel="noopener noreferrer" href="https://outlawedind.wordpress.com/">here</a>.</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}Third, we believe in following-up with our students. Our engagement does not end when the workshop ends. We have created activities that keep students engaged post-session! You can check out the post-session debate and discussion by our students <a target="_blank" rel="noopener noreferrer" href="https://outlawedind.wordpress.com/">here</a>.</dd>
                   </dl>
                 </div>
               </MDBCol>

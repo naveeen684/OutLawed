@@ -1,8 +1,8 @@
 import React from "react";
 import Wave from './images/topwaveq.png'
 import InfiniteCarousel from 'react-leaf-carousel';
-import { MDBJumbotron, MDBBtn, MDBContainer, MDBRow, MDBCol, MDBCardTitle, MDBIcon } from "mdbreact";
-import {MDBCard, MDBCardBody, MDBMask, MDBView} from "mdbreact";
+import { MDBRow, MDBCol } from "mdbreact";
+import { MDBCardBody} from "mdbreact";
 
 
 class Collaborations extends React.Component {

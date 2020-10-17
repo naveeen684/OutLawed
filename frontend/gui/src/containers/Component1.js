@@ -2,8 +2,8 @@ import React from "react";
 import { Spring } from "react-spring/renderprops";
 import Background from "./images/top.svg";
 import "./component1.css";
-import { Typography, Divider } from "antd";
-const { Title, Paragraph, Text } = Typography;
+import { Typography } from "antd";
+// const { Title, Paragraph, Text } = Typography;
 
 function Component1() {
   return (

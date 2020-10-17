@@ -1,6 +1,6 @@
 import React from 'react'
 import InfiniteCarousel from 'react-leaf-carousel';
-import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
 
 
 function SchoolCarousel() {

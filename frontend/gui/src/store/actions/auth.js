@@ -1,6 +1,7 @@
 import axios from "axios";
 import * as actionTypes from "./actionTypes";
-import { connectAdvanced } from "react-redux";
+
+var link="https://outlawedbackend.herokuapp.com/";
 
 export const authStart = () => {
   return {
@@ -23,7 +24,8 @@ export const authFail = (error) => {
 };
 
 export const logout = () => {
-  localStorage.removeItem("user");
+  console.log("logout");
+  localStorage.removeItem("token");
   localStorage.removeItem("expirationDate");
 
   return {
@@ -43,7 +45,7 @@ export const authLogin = (email, password) => {
   return (dispatch) => {
     dispatch(authStart());
     axios
-      .post("http://127.0.0.1:8000/rest-auth/login/", {
+      .post(link+"rest-auth/login/", {
         email: email,
         password: password,
       })
@@ -65,12 +67,14 @@ export const authLogin = (email, password) => {
 export const googleLogin = (accesstoken) => {
   return (dispatch) => {
     dispatch(authStart());
+    console.log(accesstoken);
     axios
-      .post("http://localhost:8000/rest-auth/google/", {
+      .post(link+"rest-auth/google/", {
         access_token: accesstoken,
       })
       .then((res) => {
-        const token = res.data.key;
+        const token = res.data.token;
+        console.log("normal",res);
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
         localStorage.setItem("token", token);
         localStorage.setItem("expirationDate", expirationDate);
@@ -88,14 +92,14 @@ export const authSignup = (email, password1, password2) => {
   return (dispatch) => {
     dispatch(authStart());
     axios
-      .post("http://127.0.0.1:8000/rest-auth/registration/", {
+      .post(link+"rest-auth/registration/", {
         email: email,
         password1: password1,
         password2: password2,
       })
       .then((res) => {
         const token = res.data.token;
-        console.log(res);
+        console.log("google",res);
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
         localStorage.setItem("token", token);
         localStorage.setItem("expirationDate", expirationDate);

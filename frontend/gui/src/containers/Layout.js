@@ -1,7 +1,7 @@
 import React from "react";
 import * as actions from "../store/actions/auth";
-import { Layout, Menu, Dropdown, Button } from "antd";
-import { Link, withRouter } from "react-router-dom";
+import { Layout } from "antd";
+import {  withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import "./layout.css";
 import logo from "./images/logo.jpeg";
@@ -16,13 +16,12 @@ import {
   MDBNavLink,
   MDBNavbarToggler,
   MDBCollapse,
-  MDBFormInline,
   MDBDropdown,
   MDBDropdownToggle,
   MDBDropdownMenu,
   MDBDropdownItem,
 } from "mdbreact";
-const { Header, Content } = Layout;
+const { Content } = Layout;
 
 class CustomLayout extends React.Component {
   state = {
@@ -157,15 +156,15 @@ class CustomLayout extends React.Component {
               {this.props.isAuthenticated ? (
                 <></>
               ) : (
+
                 <MDBNavItem className="item">
-                  <MDBNavLink to="/signup">
+                  
                     <strong
                       className=" mr-3"
                       style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
-                      Blog
+                    <a style={{ color: "#049ABF"}} target="_blank" rel="noopener noreferrer" href="https://outlawedind.wordpress.com/">Blog</a>
                     </strong>
-                  </MDBNavLink>
                 </MDBNavItem>
               )}
             </MDBNavbarNav>

@@ -31,6 +31,7 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "styled-button": "0.0.1",
+    "styled-components": "^5.2.0",
     "thunk": "0.0.1",
     "typescript": "^3.9.7"
   },

@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,12 +21,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'gipo!z-632ad+x&xm$)y=)is*u9)80rsidy(h=42!$r$=mc7+n'
+#'ebd79719fc9fbeb87d08a3f53fa39cbb3b3bdae287add95e'
+SECRET_KEY = 'ebd79719fc9fbeb87d08a3f53fa39cbb3b3bdae287add95e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['outlawedbackend.herokuapp.com','127.0.0.1:8000','localhost:8000']
 
 
 # Application definition
@@ -174,3 +176,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+
+django_heroku.settings(locals())

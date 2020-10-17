@@ -1,9 +1,9 @@
 import React from "react";
 import { Form, Input, Button, Spin } from "antd";
-import { UserOutlined, LockOutlined, GoogleOutlined } from "@ant-design/icons";
+import { LockOutlined, GoogleOutlined } from "@ant-design/icons";
 import { NavLink } from "react-router-dom";
 import { LoadingOutlined } from "@ant-design/icons";
-import { MDBContainer, MDBRow, MDBInput, MDBCol, MDBBtn } from "mdbreact";
+import { MDBRow, MDBCol } from "mdbreact";
 import * as actions from "../store/actions/auth";
 import Logo from "./images/logos.png";
 import { connect } from "react-redux";
@@ -36,7 +36,6 @@ class Signup extends React.Component {
   };
 
   render() {
-    let errorMessage = null;
 
     return (
       <div>
@@ -104,7 +103,6 @@ class Signup extends React.Component {
                       fontSize: "15px",
                       textAlign: "left",
                       marginTop: "-10px",
-                      marginTop: "2px",
                     }}
                   >
                     {this.props.error.response.data["non_field_errors"]}
@@ -120,7 +118,6 @@ class Signup extends React.Component {
                       fontSize: "15px",
                       textAlign: "left",
                       marginTop: "-10px",
-                      marginTop: "2px",
                     }}
                   >
                     {this.props.error.response.data["email"]}
@@ -154,7 +151,6 @@ class Signup extends React.Component {
                       fontSize: "15px",
                       textAlign: "left",
                       marginTop: "-10px",
-                      marginTop: "2px",
                     }}
                   >
                     {this.props.error.response.data["password1"]}

@@ -8,14 +8,13 @@ import {
   MDBContainer,
   MDBRow,
   MDBCol,
-  MDBCardTitle,
-  MDBIcon,
+  MDBCardTitle
 } from "mdbreact";
 import "./layout.css";
-import { MDBCard, MDBCardBody, MDBMask, MDBView } from "mdbreact";
-import { Container } from "reactstrap";
-import { Typography, Divider } from "antd";
-const { Title, Paragraph, Text } = Typography;
+import { MDBCard, MDBCardBody } from "mdbreact";
+// import { Container } from "reactstrap";
+import { Typography } from "antd";
+const { Title } = Typography;
 
 function Component2() {
   return (
