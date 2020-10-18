@@ -11,8 +11,8 @@ class OutlawedSessions extends React.Component{
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
         
        {/* <img  src={require("../images/topwaveq.png")} style={{width: "100vw",verticalAlign:"middle"}} alt="Founder" ></img> */}
-      <div style={{padding:"10vw 0px 0px 5vw"}} >
-        <MDBCardBody className="my-0 px-5 pb-5 text-left">
+      <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}} >
+        <MDBCardBody className="text-left">
                     <MDBRow style={{width:"95%"}}>
                     <MDBCol lg="12">
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
@@ -24,7 +24,7 @@ class OutlawedSessions extends React.Component{
                         <strong>Out Loud Series: A Summary</strong>
                         </h3>
                         <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
-                        The unexpected lockdown in the country brought unprecedented challenges with it. OutLawed, in an effort to bridge the gap between citizens and the law, came up with a series called Out Loud. It was a series of webinars that discussed legal perspectives on a number of societal issues that resonate with young minds. It was an effort to facilitate community discussion from a legal point of view.
+                        The unexpected lockdown in the country brought unprecedented challenges with it. OutLawed, in an effort to bridge the gap between citizens and the law, came up with a series called Out Loud. It was a series of online sessions that discussed legal perspectives on a number of societal issues that resonate with young minds. Out Loud was an effort to facilitate legal discourse at a community level. 
                         </p>
                     </MDBCol>
                     </MDBRow>
@@ -40,9 +40,12 @@ class OutlawedSessions extends React.Component{
                         </p>
                         <br></br>
                     </MDBCol>
-                          <MDBCol>                  
-                            <img  src={require("../images/bglap.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "27vw", height:"18vw",borderRadius:"2%"}} alt="Founder" ></img>
-                          </MDBCol>
+                    <MDBCol sm="1" lg="0">
+                      
+                    </MDBCol>
+                    <MDBCol lg="5" md="7" sm="12">
+                <img src={require("../images/bglap.png")} alt="members" style={{maxWidth:"75%"}}/>
+              </MDBCol>
                          
                     </MDBRow>
                 </MDBCardBody>

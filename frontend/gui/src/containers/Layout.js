@@ -67,11 +67,11 @@ class CustomLayout extends React.Component {
                       className=" mr-3"
                       style={{ fontSize: "2.2vh", color: "#049ABF" }}
                     >
-                      Our works
+                      Our Work
                     </strong>
                   </MDBDropdownToggle>
                   <MDBDropdownMenu >
-                    <MDBDropdownItem 
+                    <MDBDropdownItem
                       className="item"
                       href="/ourworks/community-work"
                     >
@@ -87,7 +87,7 @@ class CustomLayout extends React.Component {
                       href="/ourworks/school-program"
                     >
                       <strong style={{ fontSize: "2vh", color: "#049ABF" }} >
-                        School program
+                        LAW
                       </strong>
                     </MDBDropdownItem>
                     <MDBDropdownItem
@@ -157,7 +157,7 @@ class CustomLayout extends React.Component {
                 <></>
               ) : (
 
-                <MDBNavItem className="item">
+                <MDBNavItem className="item" style={{paddingTop:"8px"}}>
                   
                     <strong
                       className=" mr-3"

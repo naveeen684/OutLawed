@@ -8,13 +8,10 @@ import {
   MDBContainer,
   MDBRow,
   MDBCol,
-  MDBCardTitle
 } from "mdbreact";
 import "./layout.css";
 import { MDBCard, MDBCardBody } from "mdbreact";
 // import { Container } from "reactstrap";
-import { Typography } from "antd";
-const { Title } = Typography;
 
 function Component2() {
   return (
@@ -39,33 +36,34 @@ function Component2() {
                       backgroundColor: "#016B86",
                     }}
                   >
+                  <MDBRow>
+                    <MDBCol className="rounded-100 py-1">
+                      <h1 className="reduce"
+                        style={{
+                          fontFamily:"Montserrat",
+                          fontSize:"42px",
+                          textAlign:"center",
+                          opacity:"1",
+                          color:"#FAFAFA",
+                          paddingTop:"3vh"
+                        }}
+                      >OUR MISSION</h1>
+                    </MDBCol>
+                  </MDBRow>
+                  <MDBRow>
                     <MDBCol
                       className="rounded-100 py-1"
                       style={{ color: "white" }}
                     >
-                      <MDBCardTitle className="h5-responsive pt-3 m-5 font-bold">
-                        <Typography>
-                          <Title
-                            className="missiontitle"
-                            level={2}
-                            style={{
-                              color: "white",
-                              fontSize: "32px",
-                              fontFamily: "Montserrat",
-                            }}
-                          >
-                            {" "}
-                            OUR MISSION
-                          </Title>
-                        </Typography>
-                      </MDBCardTitle>
+                      
                       <p
-                        style={{ fontSize: "15px", fontFamily: "Montserrat" }}
+                        style={{ fontSize: "15px", fontFamily: "Montserrat",paddingLeft:"3vw",paddingRight:"3vw" }}
                         className="mx-2  mb-5 text-center"
                       >
                       OutLawed endeavours to bolster citizen engagement with the law through grassroots-level legal education. We aspire to make knowledge of the law accessible to individuals across socio-economic backgrounds. 
                       </p>
                     </MDBCol>
+                    </MDBRow>
                   </MDBJumbotron>
                 </MDBCol>
               </MDBRow>
@@ -74,8 +72,8 @@ function Component2() {
           <div style={{padding:"0vw 0px 0px 5vw"}}>
           <MDBCardBody className="my-5 px-5 pb-5 text-left">
             <MDBRow>
-              <MDBCol lg="7">
-                <h3
+              <MDBCol lg="6">
+              <h3
                   style={{
                     color: "#016B86",
                     fontFamily: "Montserrat",
@@ -87,6 +85,11 @@ function Component2() {
                     <b>OUR METHOD</b>
                   </strong>
                 </h3>
+              </MDBCol>
+            </MDBRow>
+            <MDBRow>
+              <MDBCol lg="6">
+                
                 <hr
                   style={{
                     width: "40px",
@@ -115,7 +118,7 @@ function Component2() {
                     fontFamily: "Montserrat",
                   }}
                   size="md"
-                  color="#4dd0e1 cyan lighten-2"
+                  color="#0097a7 cyan darken-2"
                   className="mb-lg-0 mb-4 waves-light"
                 >
                   More About Us
@@ -130,20 +133,11 @@ function Component2() {
                         </MDBView>
                     </MDBCol> */}
                     <MDBCol lg="1"></MDBCol>
-              <MDBCol lg="4" breakpoints={[
-                {
-                  breakpoint: 1500,
-                  settings: {
-                    width:"100%"
-                  },
-                }]} 
-                >
-                    <br></br>
-         
-                    
+              <MDBCol lg="4">
                   <img
                     src={require("./images/three.png")}
                     className="img-fluid fixed"
+                    style={{width:"420px",height:"23vh"}}
                     alt=""
                   />
                  
@@ -175,7 +169,7 @@ function Component2() {
               </MDBCol>
             </MDBRow>
             <MDBRow>
-              <MDBCol lg="7">
+              <MDBCol lg="6">
                 <br></br>
                 <h3
                   className="font-weight-bold mb-3 p-0"
@@ -235,7 +229,7 @@ function Component2() {
               </MDBCol>
             </MDBRow>
             <MDBRow>
-              <MDBCol lg="7">
+              <MDBCol lg="6">
                 <br></br>
                 <br></br>
                 <h3

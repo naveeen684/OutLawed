@@ -29,10 +29,10 @@ class SchoolProgram extends React.Component {
               <MDBCol md="12"><div><hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} /><br/></div></MDBCol>
             </MDBRow>
             <MDBRow>
-              <MDBCol md="12"><p style={{fontFamily:"Montserrat", color:"#6A6680", fontSize:"16px", textAlign:"left"}}>Our core initiative is LAW - Legal Awareness Workshops. Our Content Team has curated material on over 40 topics that are relevant, contemporary, and important. Through LAW, we hope to engage students to help them learn about the laws that they are most likely with at a personal level.. These modules are taught by college students studying law and policy! </p></MDBCol>
+              <MDBCol md="12"><p style={{fontFamily:"Montserrat", color:"#6A6680", fontSize:"16px", textAlign:"left"}}>Our core initiative is LAW - Legal Awareness Workshops. Our Content Team has curated material on over 40 topics that are relevant, contemporary, and important. Through LAW, we hope to engage students to help them learn about the laws that they are most likely to engage with at a personal level.These modules are taught by college students studying law and policy! </p></MDBCol>
             </MDBRow>
             <MDBRow style={{padding:"3vh 0 1vh"}}>
-              <MDBCol md="12"><div><h4 style={{fontFamily:"Montserrat", color:"#016B86", fontSize:"24px",float:"left",fontWeight:"bold"}}>Teacher's training program</h4></div><br/></MDBCol>
+              <MDBCol md="12"><div><h4 className="responsive" style={{fontFamily:"Montserrat", color:"#016B86",textAlign:"left",fontSize:"24px",float:"left",fontWeight:"bold"}}>Teacher's training program</h4></div><br/></MDBCol>
             </MDBRow>
             <MDBRow style={{paddingBottom:"1vh"}}>
               <MDBCol md="12"><div><hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} /></div></MDBCol>
