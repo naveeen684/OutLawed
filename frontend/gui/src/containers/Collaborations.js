@@ -10,13 +10,13 @@ class Collaborations extends React.Component {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
       
-      <div style={{padding:"10vw 10vw 0px 5vw" }}>
+      <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}}>
         
         
-        <MDBCardBody className="my-0 px-5 pb-5 text-left">
+        <MDBCardBody className="text-left">
                     <MDBRow style={{width:"95%"}}>
                     <MDBCol lg="12">
-                        <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
+                        <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"34px",textAlign:"left"}} className="font-weight-bold">
                         <strong><b>COLLABORATIONS</b></strong>
                         </h3>
                         <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} />
@@ -34,7 +34,7 @@ class Collaborations extends React.Component {
                     <MDBRow>
                     <MDBCol lg="6"> 
                          
-                        <p className="text-muted" style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"16px"}}>
+                        <p className="text-muted" style={{color:"#6A6680",fontFamily:"Montserrat",fontSize:"16px"}}>
                         Over a course of two months, we worked with organisations and companies like Center for Internet and Society and Trilegal, and lawyers like Dr. Aditya Sondhi, Mr. Gopal Sankaranarayanan, and Ms. Kiruba Munusamy. Each of these individuals and organisations have added value to our goal of disseminating legal information. 
                         </p>
 
@@ -209,60 +209,34 @@ class Collaborations extends React.Component {
                     
                     <MDBRow>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co1.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co2.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co3.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co4.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co5.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co6.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                     </MDBRow>
                     <MDBRow>
                       <br/>
                       <br/>
-                    </MDBRow>
-                    <MDBRow>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/profilecard.jpg")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                    </MDBRow>                  
+                    </MDBRow>                
                 </MDBCardBody>
        
       </div>

@@ -38,7 +38,7 @@ function SchoolCarousel() {
                 }
               ]}
               dots={false}
-              showSides={true}
+              showSides={false}
               sidesOpacity={0.5}
               sideSize={0.1}
               slidesToScroll={1}
