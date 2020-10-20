@@ -18,7 +18,7 @@ class OutlawedSessions extends React.Component{
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
                         <strong><b>OUTLAWED OUT LOUD</b></strong>
                         </h3>
-                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} />
+                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} />
                         <br></br>
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat", fontSize:"25px"}} className="font-weight-bold mb-3 p-0">
                         <strong>Out Loud Series: A Summary</strong>

@@ -4,7 +4,6 @@ import InfiniteCarousel from "react-leaf-carousel";
 
 import {
   MDBJumbotron,
-  MDBBtn,
   MDBContainer,
   MDBRow,
   MDBCol,
@@ -12,7 +11,6 @@ import {
 } from "mdbreact";
 import "./layout.css";
 import { MDBCard, MDBCardBody } from "mdbreact";
-// import { Container } from "reactstrap";
 import { Typography } from "antd";
 const { Title } = Typography;
 
@@ -25,7 +23,7 @@ function Component2() {
     >
       {(props) => (
         <div style={{ props }}>
-          <div class="innermission" style={{ props,padding:"0vw 0px 0px 0vw" }}>
+          <div className="innermission" style={{ props }}>
             <MDBContainer
               className="mission"
               style={{ height: "10%", width: "40%" }}
@@ -108,18 +106,12 @@ function Component2() {
 
 
                 </p>
-                <MDBBtn href="/ourworks/school-program"
-                  style={{
-                    color: "white",
-                    fontWeight:"bold",
-                    fontFamily: "Montserrat",
-                  }}
-                  size="md"
-                  color="#4dd0e1 cyan lighten-2"
-                  className="mb-lg-0 mb-4 waves-light"
-                >
-                  More About Us
-                </MDBBtn>
+                
+                <a href="/ourworks/school-program" target="_blank" rel="noopener noreferrer">
+                    <button type="button" style={{backgroundColor:"#68B8CC",border: "none",color:"#FFFFFF",padding:"5px 5px",textAlign:"center",textDecoration:"none",display:"inline-block",fontSize:"15px",borderRadius:"4px",width:"195px",height:"42px",fontWeight:"550",margin:"10px 10px"}}>
+                        More About Us
+                    </button>
+                  </a>
               </MDBCol>
               {/* <MDBCol md="5">
                         <MDBView className="responsive mb-lg-4 mb-4" hover waves>
