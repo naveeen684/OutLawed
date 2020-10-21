@@ -3,14 +3,10 @@ import React from "react";
 import Wave from '../images/topwaveq.png'
 import {  MDBRow, MDBCol } from "mdbreact";
 import {MDBCardBody} from "mdbreact";
-
-
 class OutlawedSessions extends React.Component{
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
-        
-       {/* <img  src={require("../images/topwaveq.png")} style={{width: "100vw",verticalAlign:"middle"}} alt="Founder" ></img> */}
       <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}} >
         <MDBCardBody className="text-left">
                     <MDBRow style={{width:"95%"}}>
@@ -18,7 +14,7 @@ class OutlawedSessions extends React.Component{
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
                         <strong><b>OUTLAWED OUT LOUD</b></strong>
                         </h3>
-                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} />
+                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} />
                         <br></br>
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat", fontSize:"25px"}} className="font-weight-bold mb-3 p-0">
                         <strong>Out Loud Series: A Summary</strong>

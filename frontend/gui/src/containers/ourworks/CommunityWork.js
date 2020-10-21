@@ -1,11 +1,8 @@
 import "./Communityworks.css"
 import React from "react";
 import Wave from '../images/topwaveq.png'
-// import InfiniteCarousel from 'react-leaf-carousel';
 import {  MDBRow, MDBCol } from "mdbreact";
 import { MDBCardBody} from "mdbreact";
-// import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
-
 class CommunityWork extends React.Component {
   render() {
     return (
@@ -20,7 +17,7 @@ class CommunityWork extends React.Component {
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
                         <strong><b>COMMUNITY WORK</b></strong>
                         </h3>
-                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} />
+                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} />
                         <br></br>
                         
                     </MDBCol>

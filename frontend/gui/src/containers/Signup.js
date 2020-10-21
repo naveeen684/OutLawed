@@ -202,7 +202,6 @@ class Signup extends React.Component {
                       height: "100%",
                     }}
                     htmlType="submit"
-                    // color="#006064 cyan darken-3"
                     size="large"
                     className="mb-lg-0"
                   >
@@ -215,7 +214,6 @@ class Signup extends React.Component {
                   <br></br>
                   <br></br>
                   <br></br>
-                  {/* <h3 style={{color:"#016B86",textAlign:"center"}}>Or</h3> */}
                   <GoogleLogin
                     className="Google"
                     clientId="1064931780182-kbk5iorqkft4btnchqij4obalcdc0ste.apps.googleusercontent.com"

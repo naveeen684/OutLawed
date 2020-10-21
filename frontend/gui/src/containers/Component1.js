@@ -2,8 +2,6 @@ import React from "react";
 import { Spring } from "react-spring/renderprops";
 import Background from "./images/top.svg";
 import "./component1.css";
-import { Typography } from "antd";
-// const { Title, Paragraph, Text } = Typography;
 
 function Component1() {
   return (
@@ -27,7 +25,6 @@ function Component1() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            {/* <img src={Background} style={{objectFit:"cover"}}/> */}
             <Spring
               from={{ opacity: 0 }}
               to={{ opacity: 1 }}
@@ -51,25 +48,22 @@ function Component1() {
                     >
                       {(props) => (
                         <div style={props}>
-                          <Typography>
                             <h1
                               style={{
                                 color: "#fafafa",
                                 fontFamily: "Montserrat",
-                                fontSize: "12vh",
+                  
+                                fontWeight: "600"
                               }}
+                              className="subh"
                             >
                               OUTLAWED
                             </h1>
-                          </Typography>
-
                           <div>
-                            <p style={{color: "#fafafa",
+                            <p className="subh" style={{color: "#fafafa",
                                 fontFamily: "Montserrat",
-                                fontSize: "40px"}}>
-                              <strong>
+                                fontWeight: "normal"}}>
                                 SIMPLIFYING WHAT IT MEANS TO BE AN AWARE CITIZEN
-                              </strong>
                             </p>
                           </div>
                         </div>
