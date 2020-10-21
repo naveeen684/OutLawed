@@ -121,16 +121,6 @@ const Footer = () => {
                     </li>
                     <li className="list-unstyled">
                       <a href="/collaborations" style={{ color: "#049ABF" }}>
-                        Reap Benefit
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="/collaborations" style={{ color: "#049ABF" }}>
-                        Content Work
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="/collaborations" style={{ color: "#049ABF" }}>
                         Our Partners
                       </a>
                     </li>
