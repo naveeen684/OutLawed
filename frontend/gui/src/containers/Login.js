@@ -186,7 +186,6 @@ class Login extends React.Component {
                       height: "100%",
                     }}
                     htmlType="submit"
-                    // color="#006064 cyan darken-3"
                     size="large"
                     className="mb-lg-0"
                   >
@@ -199,7 +198,6 @@ class Login extends React.Component {
                   <br></br>
                   <br></br>
                   <br></br>
-                  {/* <h3 style={{color:"#016B86",textAlign:"center"}}>Or</h3> */}
                   <GoogleLogin
                     className="Google"
                     clientId="1064931780182-kbk5iorqkft4btnchqij4obalcdc0ste.apps.googleusercontent.com"
@@ -215,16 +213,6 @@ class Login extends React.Component {
                     register now!
                   </NavLink>
                 </Form.Item>
-                {/* <Form.Item>
-                      <Form.Item
-                        style={{
-                          float: "right",
-                          margin: "0px",
-                        }}
-                      >
-                        Forgot password
-                      </Form.Item>
-                    </Form.Item> */}
               </Form>
             </MDBCol>
             <MDBCol lg="4">

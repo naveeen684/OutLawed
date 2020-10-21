@@ -3,20 +3,16 @@ import Wave from './images/topwaveq.png'
 import InfiniteCarousel from 'react-leaf-carousel';
 import { MDBRow, MDBCol } from "mdbreact";
 import { MDBCardBody} from "mdbreact";
-
-
+import "./component1.css";
 class Collaborations extends React.Component {
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
-      
       <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}}>
-        
-        
         <MDBCardBody className="text-left">
                     <MDBRow style={{width:"95%"}}>
                     <MDBCol lg="12">
-                        <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"34px",textAlign:"left"}} className="font-weight-bold">
+                        <h3 style={{color:"#016B86",fontFamily:"Montserrat",textAlign:"left"}} className="subh">
                         <strong><b>COLLABORATIONS</b></strong>
                         </h3>
                         <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} />
@@ -86,7 +82,6 @@ class Collaborations extends React.Component {
                   },
                 },
               ]}
-              //paging={true}
               arrow={true}
               showSides={false}
               slidesToScroll={3}
@@ -236,7 +231,15 @@ class Collaborations extends React.Component {
                     <MDBRow>
                       <br/>
                       <br/>
-                    </MDBRow>                
+                    </MDBRow> 
+                    <MDBRow>
+                        <MDBCol>
+                        <MDBCol>
+                            <img className="responsive" src={require("./images/rotary.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <br />
+                      </MDBCol>
+                        </MDBCol>
+                    </MDBRow>               
                 </MDBCardBody>
        
       </div>

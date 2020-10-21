@@ -1,11 +1,8 @@
 import "./Communityworks.css"
 import React from "react";
 import Wave from '../images/topwaveq.png'
-// import InfiniteCarousel from 'react-leaf-carousel';
 import {  MDBRow, MDBCol } from "mdbreact";
 import { MDBCardBody} from "mdbreact";
-// import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
-
 class CommunityWork extends React.Component {
   render() {
     return (

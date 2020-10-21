@@ -110,21 +110,13 @@ function Component2() {
 
                 </p>
                 
-                <a href="/ourworks/school-program" target="_blank" rel="noopener noreferrer">
+                <a href="/ourworks/school-program"  rel="noopener noreferrer">
                     <button type="button" style={{backgroundColor:"#68B8CC",border: "none",color:"#FFFFFF",padding:"5px 5px",textAlign:"center",textDecoration:"none",display:"inline-block",fontSize:"15px",borderRadius:"4px",width:"195px",height:"42px",fontWeight:"550",margin:"10px 10px"}}>
                         More About Us
                     </button>
-                  </a>
+                </a>
               </MDBCol>
-              {/* <MDBCol md="5">
-                        <MDBView className="responsive mb-lg-4 mb-4" hover waves>
-                        <img src="/three.png" className="img-fluid" alt="" />
-                        <a href="#!">
-                            <MDBMask overlay="white-slight" />
-                        </a>
-                        </MDBView>
-                    </MDBCol> */}
-                    <MDBCol lg="1"></MDBCol>
+              <MDBCol lg="1"></MDBCol>
               <MDBCol lg="4">
                   <img
                     src={require("./images/three.png")}
@@ -194,7 +186,6 @@ function Component2() {
                   }}
                   className="mb-2"
                 >
-                  {/* <MDBCardImage   style={{margin:"auto"}} className="img-fluid" src="/babies.png" /> */}
                   <figure>
                     <img
                       src={require("./images/babies.png")}
@@ -661,28 +652,6 @@ function Component2() {
                   </figcaption>
                 </figure>
               </div>
-              {/* <div>
-                <figure>
-                    <img
-                    style={{width:"177px",height:"214px",borderRadius:"15%"}}
-                    alt=""
-                    src={require("./images/16.png")}
-                    />
-                    <figcaption style={{textAlign:"center",color:"#016B86",fontFamily:"Montserrat",fontSize:"20px",fontWeight:"bold"}}>VIDISHA</figcaption>
-                </figure>
-                
-                </div>
-                <div>
-                <figure>
-                    <img
-                    style={{width:"177px",height:"214px",borderRadius:"15%"}}
-                    alt=""
-                    src={require("./images/17.png")}
-                    />
-                    <figcaption style={{textAlign:"center",color:"#016B86",fontFamily:"Montserrat",fontSize:"20px",fontWeight:"bold"}}>VIDISHA</figcaption>
-                </figure>
-                
-                </div> */}
               <div>
                 <figure>
                   <img

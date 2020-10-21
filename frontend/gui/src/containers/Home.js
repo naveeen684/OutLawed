@@ -1,5 +1,3 @@
-
-//import InfiniteCarousel from 'react-leaf-carousel';
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 import Component1 from "./Component1";

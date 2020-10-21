@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import SchoolCarousel from "./SchoolCarousel";
 import Wave from '../images/topwaveq.png';
 import React from "react";
-
 const Button = styled.button`
     color:#CFEEF6;
     background: #016B86 0% 0% no-repeat padding-box;
@@ -14,14 +13,11 @@ const Button = styled.button`
     padding: 20px 0px 20px 0px;
     border: auto grey;
   `
-
 class SchoolProgram extends React.Component {
-
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%",fontFamily:"Montserrat"}}>
         <div style={{paddingTop:"20vh",paddingLeft:"8vw",paddingRight :"8vw"}}>
-          {/* <MDBContainer> */}
             <MDBRow style={{paddingBottom:"1vh"}}>
               <MDBCol md="12"><div><h2 style={{fontFamily:"Montserrat", color:"#016B86", fontSize:"32px",float:"left"}}><strong>LAW</strong></h2></div><br/></MDBCol>
             </MDBRow>
@@ -61,7 +57,6 @@ class SchoolProgram extends React.Component {
               <MDBRow style={{paddingBottom:"0vh"}}>
                 <MDBCol md="12"><div><hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} /></div></MDBCol>
               </MDBRow>
-              {/* <div><p style={{fontFamily:"Montserrat", color:"#6A6680", fontSize:"16px", textAlign:"left"}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris consectetur elementum ligula eu sagittis. Donec euismod lectus ac turpis sollicitudin, at maxim placerat nibh euismod. Aenean ut ultricies magna. Fusce congue, lorem ut sollicitudin rutrum, nulla nos neque facilisis tortor, et tu losso qui lorium ipsum ma tempor augue magna at eros. Aenean et sapien dolor. Nunc venenatis justo vitae felis suscipit, volutpat venenatis libero interdum. Maecenas pellentesque tellus et mollis ullamcorper. Etiam quis ullamcorper lorem. Aenean id hendrerit dolor, id tempus nulla. Nulla ultrices sit amet vf massa quis facilisis. Integer ultricies sdfdhfib sjbkaofoa ropwpeorpqp.lorem ipsum dolor sit amet, consectetur adipiscing elit. mauris lorium consectetur elementum ligula eu sagittis. donec euismod lectus ac turpis sollicitudin, at placerat nibh euismod. aenean ut ultricies magna. fusce congue, lorem ut sollicitudin rutrum, nulla neque facilisis tortor, et tempor augue magna at eros. aenean et sapien dolor. nunc magna venenatis justo vitae felis suscipit, volutpat venenatis libero interdum. maecenas pellentesque tellus et mollis ullamcorper. etiam quis ullamcorper lorem. aenean id hendrerit dolor, id tempus nulla. nulla ultrices sit amet vf</p></div> */}
                 <div >
                   <dl style={{color:"#6A6680",alignItems:"start"}}>
                     <dt style={{textAlign:"left",color:"#68B8CC",fontSize:"20px",fontWeight:"bold",paddingTop:"2vh"}}>OutLawed has three principles that guide our workshops. </dt>
@@ -85,14 +80,11 @@ class SchoolProgram extends React.Component {
             </MDBRow>
             <MDBRow style={{padding:"5vh 0 1vh"}}>
               <MDBCol sm="12" md="8" style={{margin:"auto"}}>
-                {/* <a href="#"> */}
                 <Button href="/Login" style={{fontSize:"30px",fontFamily:"Montserrat",fontWeight:"600"}}>
                   Login to your account
                 </Button>
-                {/* </a> */}
               </MDBCol>
             </MDBRow>
-          {/* </MDBContainer> */}
         </div>
       </div>
     );

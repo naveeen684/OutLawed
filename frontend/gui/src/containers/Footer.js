@@ -153,6 +153,13 @@ const Footer = () => {
           </MDBRow>
       </MDBContainer>
     </MDBFooter>
+    <div style={{backgroundColor:"#016B86",color:"white",marginTop:"0px",paddingTop:"0px"}} className="footer-copyright text-center py-3">
+        <MDBContainer fluid>
+          &copy; {new Date().getFullYear()} Copyright:{" "}
+          <a style={{color:"white"}} href="https://www.outlawed.com"> outlawed.com</a><br />
+          {" "}Developed by <a style={{color:"white"}} href="/developers"> NNH Partners.</a>
+        </MDBContainer>
+      </div>
     </>
   );
 };

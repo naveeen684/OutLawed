@@ -52,19 +52,18 @@ function Component1() {
                               style={{
                                 color: "#fafafa",
                                 fontFamily: "Montserrat",
-                                fontSize: "140px",
+                  
                                 fontWeight: "600"
                               }}
+                              className="subh"
                             >
                               OUTLAWED
                             </h1>
                           <div>
                             <p className="subh" style={{color: "#fafafa",
                                 fontFamily: "Montserrat",
-                                fontWeight: "500"}}>
-                              {/* <strong> */}
+                                fontWeight: "normal"}}>
                                 SIMPLIFYING WHAT IT MEANS TO BE AN AWARE CITIZEN
-                              {/* </strong> */}
                             </p>
                           </div>
                         </div>

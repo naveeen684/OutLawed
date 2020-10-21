@@ -3,14 +3,10 @@ import React from "react";
 import Wave from '../images/topwaveq.png'
 import {  MDBRow, MDBCol } from "mdbreact";
 import {MDBCardBody} from "mdbreact";
-
-
 class OutlawedSessions extends React.Component{
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
-        
-       {/* <img  src={require("../images/topwaveq.png")} style={{width: "100vw",verticalAlign:"middle"}} alt="Founder" ></img> */}
       <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}} >
         <MDBCardBody className="text-left">
                     <MDBRow style={{width:"95%"}}>

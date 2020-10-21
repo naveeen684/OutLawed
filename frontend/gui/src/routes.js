@@ -9,7 +9,7 @@ import CommunityWork from "./containers/ourworks/CommunityWork";
 import SchoolProgram from "./containers/ourworks/SchoolProgram";
 import Collaborations from "./containers/Collaborations";
 import Outreach from "./containers/Outreach";
-
+import Developers from "./containers/Developers";
 const BaseRouter = () => (
   <div>
     <Route exact path="/" component={Home} />
@@ -21,6 +21,7 @@ const BaseRouter = () => (
       component={OutlawedSessions}
     />
     <Route exact path="/collaborations" component={Collaborations} />
+    <Route exact path="/Developers" component={Developers} />
     <Route exact path="/outreach" component={Outreach} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/signup" component={Signup} />
