@@ -166,6 +166,7 @@ class CustomLayout extends React.Component {
                     <a style={{ color: "#049ABF"}} target="_blank" rel="noopener noreferrer" href="https://outlawedind.wordpress.com/">Blog</a>
                     </strong>
                 </MDBNavItem>
+
               )}
             </MDBNavbarNav>
           </MDBCollapse>
