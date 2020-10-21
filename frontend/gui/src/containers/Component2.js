@@ -22,7 +22,7 @@ function Component2() {
     >
       {(props) => (
         <div style={{ props }}>
-          <div class="innermission" style={{ props,padding:"0vw 0px 0px 0vw" }}>
+          <div className="innermission" style={{ props,padding:"0vw 0px 0px 0vw" }}>
             <MDBContainer
               className="mission"
               style={{ height: "10%", width: "40%" }}
