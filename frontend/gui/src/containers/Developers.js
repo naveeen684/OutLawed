@@ -38,7 +38,7 @@ const CardExample = () => {
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg'
+              src='https://instagram.fblr8-1.fna.fbcdn.net/v/t51.2885-15/e35/43731035_636705753393573_3498579161302171648_n.jpg?_nc_ht=instagram.fblr8-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=g-MifCZsHogAX9L_v09&se=7&_nc_tp=18&oh=ecbe64e2fcb4443f96e6425f3baf716b&oe=5FBAF1A1'
               alt='Card cap'
             />
           </MDBView>
@@ -51,22 +51,17 @@ const CardExample = () => {
             <p className='font-weight-bold blue-text'>Frontend-Developer</p>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.{' '}
+              Full stack developer eager in machine learning.{' '}
             </MDBCardText>
 
             <MDBCol md='12' className='d-flex justify-content-center'>
-              <a href='!#' className='px-2 fa-lg li-ic'>
+              <a href='www.linkedin.com/in/nithin-christopher-3297031ab' className='px-2 fa-lg li-ic'>
                 <MDBIcon fab icon='linkedin-in'></MDBIcon>
               </a>
-
-              <a href='!#' className='px-2 fa-lg tw-ic'>
-                <MDBIcon fab icon='twitter'></MDBIcon>
+              <a href='mailto:christophernithin@gmail.com' className='px-2 fa-lg tw-ic' >
+                <MDBIcon icon="envelope" />
               </a>
 
-              <a href='!#' className='px-2 fa-lg fb-ic'>
-                <MDBIcon fab icon='facebook-f'></MDBIcon>
-              </a>
             </MDBCol>
           </MDBCardBody>
         </MDBCard>
@@ -78,7 +73,7 @@ const CardExample = () => {
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg'
+              src='https://instagram.fblr8-1.fna.fbcdn.net/v/t51.2885-15/e35/75450425_543101239603297_7287517472188093133_n.jpg?_nc_ht=instagram.fblr8-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=ExntIFn6sSMAX-RevNs&se=7&_nc_tp=18&oh=460adb36f68396c1424c8c351c56c94e&oe=5FBC4331'
               alt='Card cap'
             />
           </MDBView>
@@ -91,22 +86,18 @@ const CardExample = () => {
             <p className='font-weight-bold blue-text'>Backend-Developer</p>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.{' '}
+              Full stack developer, deep learning enthusiast and a data analyst.{' '}
             </MDBCardText>
 
             <MDBCol md='12' className='d-flex justify-content-center'>
-              <a href='!#' className='px-2 fa-lg li-ic'>
+              <a href='https://www.linkedin.com/in/naveenraj-r-657261188' className='px-2 fa-lg li-ic'>
                 <MDBIcon fab icon='linkedin-in'></MDBIcon>
               </a>
 
-              <a href='!#' className='px-2 fa-lg tw-ic'>
-                <MDBIcon fab icon='twitter'></MDBIcon>
+              <a href='mailto:naveenrajapandian@gmail.com' className='px-2 fa-lg tw-ic'>
+                <MDBIcon icon="envelope" />
               </a>
 
-              <a href='!#' className='px-2 fa-lg fb-ic'>
-                <MDBIcon fab icon='facebook-f'></MDBIcon>
-              </a>
             </MDBCol>
           </MDBCardBody>
         </MDBCard>
@@ -118,7 +109,7 @@ const CardExample = () => {
               hover
               overlay='white-slight'
               className='card-img-top'
-              src='https://mdbootstrap.com/img/Photos/Horizontal/People/6-col/img%20%283%29.jpg'
+              src='https://instagram.fblr8-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/c0.135.1080.1080a/s640x640/65953769_506642783478669_3710395499054908836_n.jpg?_nc_ht=instagram.fblr8-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=FSjJEyxSBf4AX-p5L0y&oh=d8aef27073604f8b589d1af9a9665035&oe=5FBCA58B'
               alt='Card cap'
             />
           </MDBView>
@@ -131,22 +122,18 @@ const CardExample = () => {
             <p className='font-weight-bold blue-text'>Frontend-Developer</p>
 
             <MDBCardText>
-              Sed ut perspiciatis unde omnis iste natus sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam.{' '}
+              Full stack developer with a keen interest in machine learning.{' '}
             </MDBCardText>
 
             <MDBCol md='12' className='d-flex justify-content-center'>
-              <a href='!#' className='px-2 fa-lg li-ic'>
+              <a href='http://www.linkedin.com/in/hariharan-k-513020185' className='px-2 fa-lg li-ic'>
                 <MDBIcon fab icon='linkedin-in'></MDBIcon>
               </a>
 
-              <a href='!#' className='px-2 fa-lg tw-ic'>
-                <MDBIcon fab icon='twitter'></MDBIcon>
+              <a href='mailto:hariharankannan1621@gmail.com ' className='px-2 fa-lg tw-ic'>
+                <MDBIcon icon='envelope'></MDBIcon>
               </a>
 
-              <a href='!#' className='px-2 fa-lg fb-ic'>
-                <MDBIcon fab icon='facebook-f'></MDBIcon>
-              </a>
             </MDBCol>
           </MDBCardBody>
         </MDBCard>

@@ -157,7 +157,7 @@ const Footer = () => {
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
           <a style={{color:"white"}} href="https://www.outlawed.com"> outlawed.com</a><br />
-          {" "}Developed by <a style={{color:"white"}} href="/developers"> NNH Partners.</a>
+          {" "}Developed by <a style={{color:"white"}} href="/developers"> NNH </a>
         </MDBContainer>
       </div>
     </>
