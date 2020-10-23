@@ -120,6 +120,16 @@ class CustomLayout extends React.Component {
                 </MDBNavLink>
               </MDBNavItem>
               <MDBNavItem className="item">
+                <MDBNavLink to="/Dynamic">
+                  <strong
+                    className=" mr-3"
+                    style={{ fontSize: "2.2vh" , color: "#049ABF"}}
+                  >
+                    Dynamic
+                  </strong>
+                </MDBNavLink>
+              </MDBNavItem>
+              <MDBNavItem className="item">
                 <MDBNavLink to="/outreach">
                   <strong
                     className="mr-3"

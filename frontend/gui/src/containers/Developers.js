@@ -97,7 +97,6 @@ const CardExample = () => {
               <a href='mailto:naveenrajapandian@gmail.com' className='px-2 fa-lg tw-ic'>
                 <MDBIcon icon="envelope" />
               </a>
-
             </MDBCol>
           </MDBCardBody>
         </MDBCard>

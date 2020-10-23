@@ -10,6 +10,8 @@ import SchoolProgram from "./containers/ourworks/SchoolProgram";
 import Collaborations from "./containers/Collaborations";
 import Outreach from "./containers/Outreach";
 import Developers from "./containers/Developers";
+import Dynamic from "./containers/Dynamic";
+
 const BaseRouter = () => (
   <div>
     <Route exact path="/" component={Home} />
@@ -22,6 +24,7 @@ const BaseRouter = () => (
     />
     <Route exact path="/collaborations" component={Collaborations} />
     <Route exact path="/Developers" component={Developers} />
+    <Route exact path="/Dynamic" component={Dynamic} />
     <Route exact path="/outreach" component={Outreach} />
     <Route exact path="/login" component={Login} />
     <Route exact path="/signup" component={Signup} />
