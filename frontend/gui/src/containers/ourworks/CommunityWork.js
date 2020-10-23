@@ -1,33 +1,30 @@
 import "./Communityworks.css"
 import React from "react";
 import Wave from '../images/topwaveq.png'
-// import InfiniteCarousel from 'react-leaf-carousel';
 import {  MDBRow, MDBCol } from "mdbreact";
 import { MDBCardBody} from "mdbreact";
-// import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBCardImage, MDBCardText} from "mdbreact";
-
 class CommunityWork extends React.Component {
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
       
-      <div style={{padding:"10vw 0px 0px 5vw" }}>
+      <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}}>
         
         
-        <MDBCardBody className="my-0 px-5 pb-5 text-left">
+        <MDBCardBody className=" text-left">
                     <MDBRow style={{width:"95%"}}>
                     <MDBCol lg="12">
                         <h3 style={{color:"#016B86",fontFamily:"Montserrat",fontSize:"36px"}} className="font-weight-bold mb-3 p-0">
                         <strong><b>COMMUNITY WORK</b></strong>
                         </h3>
-                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px"}} />
+                        <hr style={{width:"55px", border:"2px solid #016B86", borderRadius:"2px",margin:"0px",backgroundColor:"#016B86"}} />
                         <br></br>
                         
                     </MDBCol>
                     </MDBRow>
                     <br></br>
                     <MDBRow>
-                    <MDBCol lg="5"> 
+                    <MDBCol sm="12" lg="5"> 
                          <h3 style={{color:"#016B86",fontFamily:"Montserrat", fontSize:"25px"}} className="font-weight-bold mb-3 p-0">
                         <strong>Rations for low income households</strong>
                         </h3>
@@ -43,18 +40,18 @@ class CommunityWork extends React.Component {
                         We also started a volunteering campaign to support the Aahan Vaahan mission that aimed at helping migrant workers reach their homes. This campaign was extremely successful and our volunteers raised over Rs. 1,00,000 for the Mission. 
                         </p>
                     </MDBCol>
-                    <MDBCol lg="1"></MDBCol>
+                    <MDBCol sm="0" lg="1"></MDBCol>
                     <MDBCol >
                       <MDBRow >
-                          <MDBCol  end >
+                          <MDBCol >
                             <br></br>
                             <img className="responsive" src={require("../images/ow1.png")} style={{width: "149px", height:"406px",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
                           </MDBCol>
-                          <MDBCol  end >
+                          <MDBCol  >
                           <br></br>
                             <img className="responsive" src={require("../images/ow2.png")} style={{width: "149px", height:"406px",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
                           </MDBCol>
-                          <MDBCol  end >
+                          <MDBCol  >
                           <br></br>
                             <img className="responsive" src={require("../images/ow3.png")} style={{marginRight:"5vw",width: "149px", height:"406px",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
                           </MDBCol>                         

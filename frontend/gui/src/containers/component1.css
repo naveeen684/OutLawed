@@ -2,84 +2,137 @@
     height: 70vh;
     width: 100vw;
 }
-
-/* 
-div {
-    margin: 0;
-    padding: 0;
-    justify-self: center;
-    align-items: center;
+.subh{
+    font-size:40px;
 }
-
-h1 {
-    margin: 0;
-    padding: 0;
-    color: #fafafa;
-    font-family: "Montserrat";
-    font-size: 10vh;
-}*/
-
-p {
-    color: #fafafa;
-    font-size: 4vh;
-}
-
-@media (max-width:900px) {
-    p {
-        font-size: 3vh;
+@media(max-width:1980px){
+    h3.subh{
+        font-size:"34px";
+    }
+    h1.subh{
+        font-size: 140px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    p.subh{
+        font-size: 46px;
     }
 }
 
-@media (max-width:700px) {
-    p {
-        font-size: 2.5vh;
+
+@media(max-width:1075px){
+    h1.subh{
+        font-size: 120px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    
+    }
+    p.subh{
+        font-size: 46px;
+    }
+}
+@media(max-width:887px){
+    h1.subh{
+        font-size: 100px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
+    p.subh{
+        font-size: 40px;
+    }
+}
+@media (max-width:753px) {
+    h1.subh{
+        font-size: 80px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
+    p.subh{
+        font-size: 34px;
     }
 }
 
 @media (max-width:600px) {
+    h1.subh{
+        font-size: 60px;
+        padding-left: 2vw;
+        padding-right: 2vw;
 
-    h1 {
-        font-size: 9.5vh !important;
     }
-
-    p {
-        font-size: 2.5vh;
+    p.subh{
+        font-size: 28px;
     }
 }
 
 
 @media (max-width:550px) {
+    h1.subh{
+        font-size: 50px;
+        padding-left: 2vw;
+        padding-right: 2vw;
 
-    h1 {
-        font-size: 8vh !important;
+    }
+    p.subh{
+        font-size: 24px;
     }
 
 }
 
+@media (max-width:550px) {
+    h3.subh{
+        font-size: 30px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
+
+}
+
+
 @media (max-width:430px) {
 
     h1 {
-        font-size: 6vh !important;
+        padding-top: 2vh;
+        font-size: 40px !important;
     }
 
-    p {
-        font-size: 1.5vh;
+    p.subh {
+        font-size:20px;
+    }
+
+}
+@media (max-width:340px) {
+    h3.subh{
+        font-size: 24px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
     }
 
 }
 
 @media (max-width:325px) {
+    h1.subh{
+        font-size: 30px;
+        padding-left: 2vw;
+        padding-right: 2vw;
 
-    h1 {
-        font-size: 5vh !important;
     }
-
+    p.subh{
+        font-size: 18px;
+    }
 }
 
 @media (max-width:260px) {
 
     h1 {
-        font-size: 4vh !important;
+        font-size: 25px !important;
+    }
+    p.subh{
+        font-size: 14px;
     }
 
 }

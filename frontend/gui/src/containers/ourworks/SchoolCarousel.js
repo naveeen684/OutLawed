@@ -1,8 +1,6 @@
 import React from 'react'
 import InfiniteCarousel from 'react-leaf-carousel';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-
-
 function SchoolCarousel() {
     return (
         <div>
@@ -38,7 +36,7 @@ function SchoolCarousel() {
                 }
               ]}
               dots={false}
-              showSides={true}
+              showSides={false}
               sidesOpacity={0.5}
               sideSize={0.1}
               slidesToScroll={1}
@@ -90,5 +88,4 @@ function SchoolCarousel() {
         </div>
     )
 }
-
 export default SchoolCarousel;
