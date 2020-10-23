@@ -131,7 +131,7 @@ class Dynamic extends Component {
                             </MDBContainer>
 
                     </div>
-                return " "
+            return ""
              } 
         );
         var material = items.map(item => {
@@ -159,7 +159,7 @@ class Dynamic extends Component {
                         </MDBContainer>
 
                 </div>
-            return " "
+        return " "
             }
          );
         if(!isLoaded){
