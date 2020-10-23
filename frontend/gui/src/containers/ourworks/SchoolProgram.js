@@ -1,8 +1,10 @@
-import { MDBCol, MDBRow } from "mdbreact";
+import { MDBCol, MDBRow,MDBNavLink } from "mdbreact";
 import styled from 'styled-components';
 import SchoolCarousel from "./SchoolCarousel";
 import Wave from '../images/topwaveq.png';
 import React from "react";
+import { connect } from "react-redux";
+
 
 const Button = styled.button`
     color:#CFEEF6;
@@ -19,7 +21,9 @@ class SchoolProgram extends React.Component {
 
   render() {
     return (
+      
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%",fontFamily:"Montserrat"}}>
+        
         <div style={{paddingTop:"20vh",paddingLeft:"8vw",paddingRight :"8vw"}}>
           {/* <MDBContainer> */}
             <MDBRow style={{paddingBottom:"1vh"}}>
@@ -83,17 +87,34 @@ class SchoolProgram extends React.Component {
                 <SchoolCarousel />
               </MDBCol>
             </MDBRow>
+            {this.props.token? (
+              <></>
+              ) : (
             <MDBRow style={{padding:"5vh 0 1vh"}}>
               <MDBCol sm="12" md="8" style={{margin:"auto"}}>
-                <Button href="/Login" style={{fontSize:"30px",fontFamily:"Montserrat",fontWeight:"600"}}>
+              <MDBNavLink to="/login">
+                <Button  style={{fontSize:"30px",fontFamily:"Montserrat",fontWeight:"600"}}>
                   Login to your account
                 </Button>
+                </MDBNavLink>
               </MDBCol>
-            </MDBRow>
+            </MDBRow>)
+            }
+            
           {/* </MDBContainer> */}
         </div>
       </div>
     );
   }
 }
-export default SchoolProgram;
+
+const mapStateToProps = (state) => {
+  return {
+    loading: state.loading,
+    error: state.error,
+    token: state.token,
+  };
+};
+
+export default connect(mapStateToProps)(SchoolProgram);
+

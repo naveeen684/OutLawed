@@ -23,8 +23,9 @@ const Footer = () => {
                 <div>
                   <h3 className="title">
                     <strong>
-                      Don't miss out,
-                      <br /> subscribe to our newsletter today.
+                      {"Don't miss out,"}
+                      <br/> 
+                      subscribe to our newsletter today.
                     </strong>
                   </h3>
                 </div>
