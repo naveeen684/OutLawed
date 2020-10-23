@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['outlawedbackend.herokuapp.com','127.0.0.1:8000','localhost:800
 # Application definition
 
 INSTALLED_APPS = [
+    'link',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,6 +106,12 @@ DATABASES = {
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+
+REST_FRAMEWORK = {
+   'DEFAULT_PERMISSION_CLASSES': [
+   'rest_framework.permissions.AllowAny',
+]
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
