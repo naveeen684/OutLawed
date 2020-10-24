@@ -1,0 +1,56 @@
+
+div.outcont{
+    padding-top:20vh;
+    padding-left:7vw;
+    padding-right :7vw;
+}
+
+.conts{
+    width:33%;
+    display:inline-block;
+}
+
+.jumbotron{
+    width: 100%;
+}
+
+.jumbo__head{
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:799px)
+{
+    div.conts{
+        width:50%;
+        height: min-content;
+        display:inline-block
+    }
+    div.outcont{
+        padding-top:10vh;
+        padding-left:2vw;
+        padding-right:2vw;
+    }
+    .jumbo__head{
+        font-weight: 500;
+        font-size: 8vh;
+    }
+
+}
+
+@media screen and (max-width:430px)
+{
+    div.conts{
+        width:100%;
+        display:block
+    }
+    div.outcont{
+        padding-top:10vh;
+        padding-left:2vw;
+        padding-right:2vw;
+    }
+    .jumbo__head{
+        font-weight: 500;
+        font-size: 8vh;
+    }
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { MDBJumbotron, MDBBtn, MDBCardBody,MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import Wave from './images/topwaveq.png';
+import "./Dynamic.css";
 class Dynamic extends Component {
     constructor(props){
         super(props);
@@ -21,100 +22,17 @@ class Dynamic extends Component {
     }
     render() {
 
-        //var { isLoaded,items} = this.state;                  !DATA from REST API
-        var isLoaded  = true;
-        var items = [
-            {
-                "id": 1,
-                "TypeOfEvent": "1",
-                "Title": "Coderz",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 2,
-                "TypeOfEvent": "2",
-                "Title": "Code",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 3,
-                "TypeOfEvent": "1",
-                "Title": "C++",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 4,
-                "TypeOfEvent": "2",
-                "Title": "C ",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 5,
-                "TypeOfEvent": "1",
-                "Title": "JAVA",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 6,
-                "TypeOfEvent": "2",
-                "Title": "Python",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 7,
-                "TypeOfEvent": "1",
-                "Title": "ReactJS",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 8,
-                "TypeOfEvent": "2",
-                "Title": "VueJS",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 9,
-                "TypeOfEvent": "1",
-                "Title": "AngularJS",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-            {
-                "id": 10,
-                "TypeOfEvent": "2",
-                "Title": "Flutter",
-                "Description": "Coding Competition",
-                "Link": "https://www.studytonight.com/cpp/cpp-and-oops-concepts.php",
-                "Date": "2020-10-23"
-            },
-
-        ]
+        var { isLoaded,items} = this.state;                  //!DATA from REST API
+        
         var quiz = items.map(item => {
 
-            if(item.TypeOfEvent==='1')     
-                return <div style={{width:"50vw",marginLeft:"auto",marginRight:"auto",display:"block"}} key={item.id}>
+            if(item.TypeOfEvent==='2')     
+                return <div key={item.id} className="conts">
                             <MDBContainer className="mt-5 text-center">
                                 <MDBRow>
                                     <MDBCol>
                                     <MDBJumbotron>
-                                        <h2 className="h1 display-3">{item.Title}</h2>
+                                        <h2 className="h1 display-3 jumbo__head">{item.Title}</h2>
                                         <p className="lead">
                                         {item.Description}
                                         </p>
@@ -135,14 +53,13 @@ class Dynamic extends Component {
              } 
         );
         var material = items.map(item => {
-
-        if(item.TypeOfEvent==='2')     
-            return <div style={{width:"50vw",marginLeft:"auto",marginRight:"auto",display:"block"}} key={item.id}>
+        if(item.TypeOfEvent==='1')     
+            return <div  key={item.id} className="conts">
                         <MDBContainer className="mt-5 text-center">
                             <MDBRow>
                                 <MDBCol>
-                                <MDBJumbotron>
-                                    <h2 className="h1 display-3">{item.Title}</h2>
+                                <MDBJumbotron className="inner__conts" style={{width:"100%"}}>
+                                    <h2 className="h1 display-3 jumbo__head">{item.Title}</h2>
                                     <p className="lead">
                                     {item.Description}
                                     </p>
@@ -163,12 +80,12 @@ class Dynamic extends Component {
             }
          );
         if(!isLoaded){
-            return <div><h1>MORE Interesting contents are in the way</h1></div>
+            return <div><h1>Loading...</h1></div>
         }
         else{
             return (
                 <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
-                <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}} >
+                <div  className="outcont">
                   <MDBCardBody className="text-left">
                               <MDBRow style={{width:"95%"}}>
                               <MDBCol lg="12">
