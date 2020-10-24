@@ -119,16 +119,20 @@ class CustomLayout extends React.Component {
                   </strong>
                 </MDBNavLink>
               </MDBNavItem>
+              
+              {this.props.isAuthenticated ? (
               <MDBNavItem className="item">
                 <MDBNavLink to="/Dynamic">
                   <strong
                     className=" mr-3"
                     style={{ fontSize: "2.2vh" , color: "#049ABF"}}
                   >
-                    Dynamic
+                    Content
                   </strong>
                 </MDBNavLink>
               </MDBNavItem>
+              ):(<></>)
+              }
               <MDBNavItem className="item">
                 <MDBNavLink to="/outreach">
                   <strong

@@ -28,11 +28,11 @@ class Login extends React.Component {
   };
 
   onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    // console.log("Failed:", errorInfo);
   };
 
   googleResponse = (response) => {
-    console.log("google auth");
+    // console.log("google auth");
     this.props.googleAuth(response.accessToken);
   };
 
@@ -40,7 +40,7 @@ class Login extends React.Component {
     
     return (
       <div>
-        {this.props.token ? this.onVerified() : console.log("no")}
+        {this.props.token ? this.onVerified() : null}
         <>
           <MDBRow style={{ width: "100vw", height: "84vh" }}>
             <MDBCol lg="8">

@@ -24,7 +24,7 @@ export const authFail = (error) => {
 };
 
 export const logout = () => {
-  console.log("logout");
+  // console.log("logout");
   localStorage.removeItem("token");
   localStorage.removeItem("expirationDate");
 
@@ -51,7 +51,7 @@ export const authLogin = (email, password) => {
       })
       .then((res) => {
         const token = res.data.token;
-        console.log(token);
+        // console.log(token);
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
         localStorage.setItem("token", token);
         localStorage.setItem("expirationDate", expirationDate);
@@ -67,14 +67,14 @@ export const authLogin = (email, password) => {
 export const googleLogin = (accesstoken) => {
   return (dispatch) => {
     dispatch(authStart());
-    console.log(accesstoken);
+    // console.log(accesstoken);
     axios
       .post(link+"rest-auth/google/", {
         access_token: accesstoken,
       })
       .then((res) => {
         const token = res.data.token;
-        console.log("normal",res);
+        // console.log("normal",res);
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
         localStorage.setItem("token", token);
         localStorage.setItem("expirationDate", expirationDate);
@@ -83,7 +83,7 @@ export const googleLogin = (accesstoken) => {
       })
       .catch((err) => {
         dispatch(authFail(err));
-        console.log(err.response.data);
+        // console.log(err.response.data);
       });
   };
 };
@@ -99,7 +99,7 @@ export const authSignup = (email, password1, password2) => {
       })
       .then((res) => {
         const token = res.data.token;
-        console.log("google",res);
+        // console.log("google",res);
         const expirationDate = new Date(new Date().getTime() + 3600 * 1000);
         localStorage.setItem("token", token);
         localStorage.setItem("expirationDate", expirationDate);
@@ -108,7 +108,7 @@ export const authSignup = (email, password1, password2) => {
       })
       .catch((err, res) => {
         dispatch(authFail(err));
-        console.log(err.response.data);
+        // console.log(err.response.data);
       });
   };
 };

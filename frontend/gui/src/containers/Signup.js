@@ -28,7 +28,7 @@ class Signup extends React.Component {
   };
 
   onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    // console.log("Failed:", errorInfo);
   };
 
   googleResponse = (response) => {
@@ -39,7 +39,7 @@ class Signup extends React.Component {
 
     return (
       <div>
-        {this.props.token ? this.onVerified() : console.log("no")}
+        {this.props.token ? this.onVerified() : null}
 
         <>
           <MDBRow style={{ width: "100vw", height: "84vh" }}>

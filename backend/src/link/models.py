@@ -10,4 +10,7 @@ class Link(models.Model):
     Description=models.CharField(max_length=200)
     Link=models.URLField()
     Date=models.DateField()
+
+    def __str__(self):
+        return 'Title: ' + self.Title
     
