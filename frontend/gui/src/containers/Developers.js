@@ -55,7 +55,7 @@ const CardExample = () => {
             </MDBCardText>
 
             <MDBCol md='12' className='d-flex justify-content-center'>
-              <a href='www.linkedin.com/in/nithin-christopher-3297031ab' className='px-2 fa-lg li-ic'>
+              <a href='https://www.linkedin.com/in/nithin-christopher-3297031ab/' className='px-2 fa-lg li-ic'>
                 <MDBIcon fab icon='linkedin-in'></MDBIcon>
               </a>
               <a href='mailto:christophernithin@gmail.com' className='px-2 fa-lg tw-ic' >

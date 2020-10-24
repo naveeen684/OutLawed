@@ -81,7 +81,7 @@ const Footer = () => {
                   </dl>
                 </MDBCol>
                 <MDBCol sm="12" md="4">
-                  <h5 style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px",width:"100%",textAlign:"left" }}>
+                  <h5 style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
                     Our Work
                   </h5>
                   <dl style={{ fontSize:"12px" }}>
@@ -156,8 +156,8 @@ const Footer = () => {
     <div style={{backgroundColor:"#016B86",color:"white",marginTop:"0px",paddingTop:"0px"}} className="footer-copyright text-center py-3">
         <MDBContainer fluid>
           &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a style={{color:"white"}} href="https://www.outlawed.com"> outlawed.com</a><br />
-          {" "}Developed by <a style={{color:"white"}} href="/developers"> NNH </a>
+          <a style={{color:"white"}} href="https://outlawedindia.com"> outlawedindia.com</a><br />
+          {" "}Developed by <a style={{color:"White",fontWeight:"bold"}} href="/developers"> ZeroCoderz </a>
         </MDBContainer>
       </div>
     </>

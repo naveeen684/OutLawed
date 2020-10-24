@@ -16,7 +16,7 @@ const BaseRouter = () => (
   <div>
     <Route exact path="/" component={Home} />
     <Route exact path="/ourworks/community-work" component={CommunityWork} />
-    <Route exact path="/ourworks/school-program" component={SchoolProgram} />
+    <Route exact path="/ourworks/law" component={SchoolProgram} />
     <Route
       exact
       path="/ourworks/outlawed-sessions"

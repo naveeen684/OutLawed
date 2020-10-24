@@ -84,7 +84,7 @@ class CustomLayout extends React.Component {
                     </MDBDropdownItem>
                     <MDBDropdownItem
                       className="item"
-                      href="/ourworks/school-program"
+                      href="/ourworks/law"
                     >
                       <strong style={{ fontSize: "2vh", color: "#049ABF" }} >
                         LAW

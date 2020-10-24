@@ -110,7 +110,7 @@ function Component2() {
 
                 </p>
                 
-                <a href="/ourworks/school-program"  rel="noopener noreferrer">
+                <a href="/ourworks/law"  rel="noopener noreferrer">
                     <button type="button" style={{backgroundColor:"#68B8CC",border: "none",color:"#FFFFFF",padding:"5px 5px",textAlign:"center",textDecoration:"none",display:"inline-block",fontSize:"15px",borderRadius:"4px",width:"195px",height:"42px",fontWeight:"550",margin:"10px 10px"}}>
                         More About Us
                     </button>
