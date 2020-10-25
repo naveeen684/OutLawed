@@ -41,7 +41,7 @@ function SchoolCarousel() {
               sideSize={0.1}
               slidesToScroll={1}
               slidesToShow={3}
-              scrollOnDevice={true}
+              scrollOnDevice={false}
               autoCycle={false}
           
             >

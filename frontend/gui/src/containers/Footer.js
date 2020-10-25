@@ -27,7 +27,7 @@ const Footer = () => {
                       </strong>
                   </div>
                 </MDBCol>
-                <div>
+                <div className="centerize">
                     
                   <a href="https://www.linkedin.com/company/outlawed" target="_blank" rel="noopener noreferrer">
                     <button type="button" style={{backgroundColor:"#68B8CC",border: "none",color:"#FFFFFF",padding:"5px 5px",textAlign:"center",textDecoration:"none",display:"inline-block",fontSize:"12px",borderRadius:"4px",width:"100px",fontWeight:"550",margin:"10px 10px"}}>
@@ -81,7 +81,7 @@ const Footer = () => {
                   </dl>
                 </MDBCol>
                 <MDBCol sm="12" md="4">
-                  <h5 style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
+                  <h5 className="title" style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
                     Our Work
                   </h5>
                   <dl style={{ fontSize:"12px" }}>
@@ -102,7 +102,7 @@ const Footer = () => {
                     </li>
                   </dl>
                 </MDBCol>
-                <MDBCol md="3">
+                <MDBCol md="4">
                   <a href="/collaborations">
                   <h5 className="title" style={{ color: "#049ABF",fontWeight:"600",fontSize:"16px" }}>
                     Collaborations
@@ -126,7 +126,7 @@ const Footer = () => {
                     </li>
                   </dl>
                 </MDBCol>
-                <MDBCol md="3">
+                <MDBCol md="2">
                   <a href="/outreach">
                   <h5 className="title" style={{ color: "#049ABF",fontWeight:"600",fontSize:"16px" }}>
                     Outreach

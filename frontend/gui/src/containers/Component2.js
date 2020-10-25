@@ -254,7 +254,7 @@ function Component2() {
                   },
                 },
                 {
-                  breakpoint: 405,
+                  breakpoint: 558,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -283,13 +283,14 @@ function Component2() {
                 },
               ]}
               dots={false}
-              showSides={true}
+              showSides={false}
               sidesOpacity={0.5}
               sideSize={0.1}
               slidesToScroll={6}
               slidesToShow={6}
-              scrollOnDevice={true}
+              scrollOnDevice={false}
               autoCycle={false}
+              arrows = {true}
           
             >
               <div>

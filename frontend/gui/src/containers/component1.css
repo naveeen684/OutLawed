@@ -20,7 +20,7 @@
 }
 
 
-@media(max-width:1075px){
+@media(max-width:1195px){
     h1.subh{
         font-size: 120px;
         padding-left: 2vw;
@@ -29,9 +29,22 @@
     
     }
     p.subh{
-        font-size: 46px;
+        font-size: 32px;
     }
 }
+
+@media(max-width:1007px){
+    h1.subh{
+        font-size: 110px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    p.subh{
+        font-size: 32px;
+    }
+}
+
+
 @media(max-width:887px){
     h1.subh{
         font-size: 100px;
@@ -40,9 +53,22 @@
 
     }
     p.subh{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
+
+@media(max-width:847px){
+    h1.subh{
+        font-size: 90px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
+    p.subh{
+        font-size: 30px;
+    }
+}
+
 @media (max-width:753px) {
     h1.subh{
         font-size: 80px;
@@ -51,26 +77,38 @@
 
     }
     p.subh{
-        font-size: 34px;
+        font-size: 30px;
     }
 }
 
-@media (max-width:600px) {
+@media (max-width:655px) {
     h1.subh{
-        font-size: 60px;
+        font-size: 75px;
         padding-left: 2vw;
         padding-right: 2vw;
 
     }
     p.subh{
-        font-size: 28px;
+        font-size: 26px;
+    }
+}
+
+@media (max-width:600px) {
+    h1.subh{
+        font-size: 70px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+
+    }
+    p.subh{
+        font-size: 26px;
     }
 }
 
 
 @media (max-width:550px) {
     h1.subh{
-        font-size: 50px;
+        font-size: 60px;
         padding-left: 2vw;
         padding-right: 2vw;
 
@@ -88,22 +126,44 @@
         padding-right: 2vw;
 
     }
-
 }
 
 
-@media (max-width:430px) {
+@media (max-width:486px) {
 
     h1 {
+        padding-top: 2vh;
+        font-size: 50px !important;
+    }
+
+    p.subh {
+        font-size:22px;
+    }
+
+}
+
+@media (max-width:446px) {
+    p.subh {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width:405px) {
+    p.subh {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:381px) {
+    h1.subh {
         padding-top: 2vh;
         font-size: 40px !important;
     }
 
-    p.subh {
-        font-size:20px;
-    }
-
 }
+
 @media (max-width:340px) {
     h3.subh{
         font-size: 24px;
@@ -128,7 +188,7 @@
 
 @media (max-width:260px) {
 
-    h1 {
+    h1.subh {
         font-size: 25px !important;
     }
     p.subh{

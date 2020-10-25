@@ -103,7 +103,7 @@ class CustomLayout extends React.Component {
                         style={{ fontSize: "2vh", color: "#049ABF" }}
                         className=" mr-3"
                       >
-                        Outlawed sessions
+                        Out Loud sessions
                       </strong>
                     </MDBDropdownItem>
                   </MDBDropdownMenu>
