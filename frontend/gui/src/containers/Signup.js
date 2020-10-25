@@ -8,6 +8,8 @@ import * as actions from "../store/actions/auth";
 import Logo from "./images/logos.png";
 import { connect } from "react-redux";
 import GoogleLogin from "react-google-login";
+import {Helmet} from "react-helmet";
+
 
 const antIcon = (
   <LoadingOutlined style={{ fontSize: 20, color: "white" }} spin />
@@ -39,6 +41,11 @@ class Signup extends React.Component {
 
     return (
       <div>
+        <Helmet>
+          <meta charSet="UTF-8"/>
+          <title>Outlawed-Login</title>
+        </Helmet>
+
         {this.props.token ? this.onVerified() : null}
 
         <>

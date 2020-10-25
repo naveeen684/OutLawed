@@ -77,7 +77,7 @@ class CustomLayout extends React.Component {
                     >
                       <strong
                         style={{ fontSize: "2vh", color: "#049ABF" }}
-                        
+                        className=" mr-3"
                       >
                         Community work
                       </strong>
@@ -86,7 +86,7 @@ class CustomLayout extends React.Component {
                       className="item"
                       href="/ourworks/law"
                     >
-                      <strong style={{ fontSize: "2vh", color: "#049ABF" }} >
+                      <strong style={{ fontSize: "2vh", color: "#049ABF" }} className=" mr-3">
                         LAW
                       </strong>
                     </MDBDropdownItem>

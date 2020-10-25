@@ -81,7 +81,7 @@ const Footer = () => {
                   </dl>
                 </MDBCol>
                 <MDBCol sm="12" md="4">
-                  <h5 style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
+                  <h5 className="title" style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
                     Our Work
                   </h5>
                   <dl style={{ fontSize:"12px" }}>

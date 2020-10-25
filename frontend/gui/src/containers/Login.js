@@ -8,6 +8,7 @@ import {  MDBRow, MDBCol } from "mdbreact";
 import * as actions from "../store/actions/auth";
 import { LockOutlined, GoogleOutlined } from "@ant-design/icons";
 import GoogleLogin from "react-google-login";
+import {Helmet} from "react-helmet";
 
 const layout = {
   labelCol: { span: 8 },
@@ -40,6 +41,10 @@ class Login extends React.Component {
     
     return (
       <div>
+        <Helmet>
+          <meta charSet="UTF-8"/>
+          <title>Outlawed-Login</title>
+        </Helmet>
         {this.props.token ? this.onVerified() : null}
         <>
           <MDBRow style={{ width: "100vw", height: "84vh" }}>
