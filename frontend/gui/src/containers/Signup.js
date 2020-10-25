@@ -41,11 +41,11 @@ class Signup extends React.Component {
 
     return (
       <div>
-        <Helmet>
+          <Helmet>
           <meta charSet="UTF-8"/>
-          <title>Outlawed-Login</title>
+          <title>Outlawed-Signup</title>
+         
         </Helmet>
-
         {this.props.token ? this.onVerified() : null}
 
         <>

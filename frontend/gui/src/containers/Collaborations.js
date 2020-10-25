@@ -4,10 +4,16 @@ import InfiniteCarousel from 'react-leaf-carousel';
 import { MDBRow, MDBCol } from "mdbreact";
 import { MDBCardBody} from "mdbreact";
 import "./component1.css";
+import {Helmet} from "react-helmet";
+
 class Collaborations extends React.Component {
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
+     <Helmet>
+          <meta charSet="UTF-8"/>
+          <title>Outlawed-Collaborations</title>
+        </Helmet>
       <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}}>
         <MDBCardBody className="text-left">
                     <MDBRow style={{width:"95%"}}>
@@ -83,10 +89,12 @@ class Collaborations extends React.Component {
                 },
               ]}
               arrow={true}
-              showSides={false}
+              showSides={true}
+              sidesOpacity={0.5}
+              sideSize={0.1}
               slidesToScroll={3}
               slidesToShow={3}
-              scrollOnDevice={true}
+              scrollOnDevice={false}
               autoCycle={false}       
             >
               <div>
@@ -208,23 +216,16 @@ class Collaborations extends React.Component {
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/co2.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co4.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
+                      
                       <MDBCol>
                             <img className="responsive" src={require("./images/co3.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/co4.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/co5.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
-                            <br />
-                      </MDBCol>
-                      <MDBCol>
-                            <img className="responsive" src={require("./images/co6.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co2.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                     </MDBRow>
@@ -233,12 +234,18 @@ class Collaborations extends React.Component {
                       <br/>
                     </MDBRow> 
                     <MDBRow>
-                        <MDBCol>
+                      <MDBCol>
+                              <img className="responsive" src={require("./images/co5.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
+                              <br />
+                      </MDBCol>
+                      <MDBCol>
+                              <img className="responsive" src={require("./images/co6.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                              <br />
+                        </MDBCol>
                         <MDBCol>
                             <img className="responsive" src={require("./images/rotary.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
-                        </MDBCol>
                     </MDBRow>               
                 </MDBCardBody>
        

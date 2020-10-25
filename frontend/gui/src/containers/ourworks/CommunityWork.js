@@ -3,11 +3,16 @@ import React from "react";
 import Wave from '../images/topwaveq.png'
 import {  MDBRow, MDBCol } from "mdbreact";
 import { MDBCardBody} from "mdbreact";
+import {Helmet} from "react-helmet";
+
 class CommunityWork extends React.Component {
   render() {
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
-      
+      <Helmet>
+          <meta charSet="UTF-8"/>
+          <title>Outlawed-Community Work</title>
+        </Helmet>
       <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}}>
         
         
@@ -41,19 +46,20 @@ class CommunityWork extends React.Component {
                         </p>
                     </MDBCol>
                     <MDBCol sm="0" lg="1"></MDBCol>
-                    <MDBCol >
+                    <MDBCol lg="6" >
+                      <img className="response" src={require("../images/ow.png")} style={{borderRadius:"2%"}} alt="Founder" ></img>
                       <MDBRow >
-                          <MDBCol >
+                          <MDBCol md="4" sm="4">
                             <br></br>
-                            <img className="responsive" src={require("../images/ow1.png")} style={{width: "149px", height:"406px",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("../images/ow1.png")} style={{borderRadius:"2%"}} alt="Founder" ></img>
                           </MDBCol>
-                          <MDBCol  >
+                          <MDBCol md="4" sm="4">
                           <br></br>
-                            <img className="responsive" src={require("../images/ow2.png")} style={{width: "149px", height:"406px",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("../images/ow2.png")} style={{borderRadius:"2%"}} alt="Founder" ></img>
                           </MDBCol>
-                          <MDBCol  >
+                          <MDBCol md="4" sm="4">
                           <br></br>
-                            <img className="responsive" src={require("../images/ow3.png")} style={{marginRight:"5vw",width: "149px", height:"406px",borderRadius:"2%",verticalAlign:"middle"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("../images/ow3.png")} style={{borderRadius:"2%"}} alt="Founder" ></img>
                           </MDBCol>                         
                       </MDBRow>
                     </MDBCol>

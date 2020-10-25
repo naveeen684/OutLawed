@@ -27,7 +27,7 @@ const Footer = () => {
                       </strong>
                   </div>
                 </MDBCol>
-                <div>
+                <div className="centerize">
                     
                   <a href="https://www.linkedin.com/company/outlawed" target="_blank" rel="noopener noreferrer">
                     <button type="button" style={{backgroundColor:"#68B8CC",border: "none",color:"#FFFFFF",padding:"5px 5px",textAlign:"center",textDecoration:"none",display:"inline-block",fontSize:"12px",borderRadius:"4px",width:"100px",fontWeight:"550",margin:"10px 10px"}}>
@@ -80,7 +80,7 @@ const Footer = () => {
                     </li>
                   </dl>
                 </MDBCol>
-                <MDBCol sm="12" md="4">
+                <MDBCol sm="12" md="3">
                   <h5 className="title" style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
                     Our Work
                   </h5>
@@ -91,37 +91,13 @@ const Footer = () => {
                       </a>
                     </li>
                     <li className="list-unstyled">
-                      <a href="/ourworks/school-program" style={{ color: "#049ABF" }}>
+                      <a href="/ourworks/law" style={{ color: "#049ABF" }}>
                         Legal Awareness Workshops
                       </a>
                     </li>
                     <li className="list-unstyled">
-                      <a href="/ourworks/outlawed-sessions" style={{ color: "#049ABF" }}>
+                      <a href="/ourworks/outloud-sessions" style={{ color: "#049ABF" }}>
                         OutLoud Sessions
-                      </a>
-                    </li>
-                  </dl>
-                </MDBCol>
-                <MDBCol md="3">
-                  <a href="/collaborations">
-                  <h5 className="title" style={{ color: "#049ABF",fontWeight:"600",fontSize:"16px" }}>
-                    Collaborations
-                  </h5>
-                  </a>
-                  <dl style={{ fontSize:"12px" }}>
-                    <li className="list-unstyled">
-                      <a href="/collaborations" style={{ color: "#049ABF" }}>
-                        Out Loud
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="/collaborations" style={{ color: "#049ABF" }}>
-                        Awareness Campaigns
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="/collaborations" style={{ color: "#049ABF" }}>
-                        Our Partners
                       </a>
                     </li>
                   </dl>
@@ -141,6 +117,30 @@ const Footer = () => {
                     <li className="list-unstyled">
                       <a href="/outreach" style={{ color: "#049ABF" }}>
                         Recognition
+                      </a>
+                    </li>
+                  </dl>
+                </MDBCol>
+                <MDBCol md="4">
+                  <a href="/collaborations">
+                  <h5 className="title" style={{ color: "#049ABF",fontWeight:"600",fontSize:"16px" }}>
+                    Collaborations
+                  </h5>
+                  </a>
+                  <dl style={{ fontSize:"12px" }}>
+                    <li className="list-unstyled">
+                      <a href="/collaborations" style={{ color: "#049ABF" }}>
+                        Out Loud
+                      </a>
+                    </li>
+                    <li className="list-unstyled">
+                      <a href="/collaborations" style={{ color: "#049ABF" }}>
+                        Awareness Campaigns
+                      </a>
+                    </li>
+                    <li className="list-unstyled">
+                      <a href="/collaborations" style={{ color: "#049ABF" }}>
+                        Our Partners
                       </a>
                     </li>
                   </dl>

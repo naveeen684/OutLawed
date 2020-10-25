@@ -22,6 +22,14 @@
     }
 }
 
+@media (max-width:767px) {
+    .centerize{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
 @media (max-width:763px) {
     .grey-text {
         margin-right: 0%;
@@ -40,7 +48,7 @@
     }
 
     .title {
-        padding-right: 100% !important;
+        text-align: center;
     }
 
     .mission {

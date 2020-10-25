@@ -19,7 +19,7 @@ const BaseRouter = () => (
     <Route exact path="/ourworks/law" component={SchoolProgram} />
     <Route
       exact
-      path="/ourworks/outlawed-sessions"
+      path="/ourworks/outloud-sessions"
       component={OutlawedSessions}
     />
     <Route exact path="/collaborations" component={Collaborations} />

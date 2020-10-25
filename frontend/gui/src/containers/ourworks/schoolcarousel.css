@@ -1,0 +1,24 @@
+.card-body .cartit{
+    font-size:20px !important
+}
+
+/* div .card-body{
+    background-color: aquamarine;
+} */
+
+.card-body .cartet {
+    font-size:20px !important
+}
+/* .card .card-body .card-text{
+    font-size:25px !important
+} */
+
+@media (max-width:425px){
+    .card-body .cartit{
+        font-size:18px !important
+    }
+    
+    .card-body .cartet{
+        font-size:18px !important
+    }
+}

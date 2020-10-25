@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import SchoolCarousel from "./SchoolCarousel";
 import Wave from '../images/topwaveq.png';
 import React from "react";
+import {Helmet} from "react-helmet";
+
 const Button = styled.button`
     color:#CFEEF6;
     background: #016B86 0% 0% no-repeat padding-box;
@@ -19,7 +21,10 @@ class SchoolProgram extends React.Component {
     return (
       
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%",fontFamily:"Montserrat"}}>
-        
+        <Helmet>
+          <meta charSet="UTF-8"/>
+          <title>Outlawed-Law</title>
+        </Helmet>
         <div style={{paddingTop:"20vh",paddingLeft:"8vw",paddingRight :"8vw"}}>
             <MDBRow style={{paddingBottom:"1vh"}}>
               <MDBCol md="12"><div><h2 style={{fontFamily:"Montserrat", color:"#016B86", fontSize:"32px",float:"left"}}><strong>LAW</strong></h2></div><br/></MDBCol>
@@ -42,10 +47,10 @@ class SchoolProgram extends React.Component {
                   <br/><br />They are made to undergo two mandatory training programs: </p></div>
                   <div>
                   <dl style={{color:"#6A6680",alignItems:"start"}}>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}The anti-sexual harassment and gender sensitisation workshop</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}The anti-sexual harassment and gender sensitisation workshop</dd>
                     <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}>We believe in creating a safe space for learning. To ensure this, all our teachers are well informed of codes of conduct that they must follow to ensure that everyone is respected, and feels safe.</dd>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}The teaching program</dd>
-                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}><dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}>While our teachers may be students themselves, they have been through comprehensive sessions with experienced teachers to learn about good teaching practices. They have been taught how to facilitate an interactive and fruitful learning experience for students. </dd></dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 5px 0px",textAlign:"left"}}><img src={require("../images/icon_tick.svg")} alt="tick" style={{paddingRight:"10px"}}/>{" "}The teaching program</dd>
+                    <dd style={{margin:"0px",float:"left",fontSize:"16px",padding:"5px 0px 20px 0px",textAlign:"left"}}>While our teachers may be students themselves, they have been through comprehensive sessions with experienced teachers to learn about good teaching practices. They have been taught how to facilitate an interactive and fruitful learning experience for students. </dd>
                   </dl>
                 </div>
               </MDBCol>

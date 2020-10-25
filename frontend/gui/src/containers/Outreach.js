@@ -2,12 +2,17 @@ import React from "react";
 import { MDBCol, MDBRow } from "mdbreact";
 import Wave from './images/topwaveq.png';
 import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText } from 'mdbreact';
+import {Helmet} from "react-helmet";
 
 class Outreach extends React.Component {
    
   render() { 
     return (
       <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%",fontFamily:"Montserrat",paddingBottom:"3vh"}}>
+          <Helmet>
+          <meta charSet="UTF-8"/>
+          <title>Outlawed-Outreach</title>
+        </Helmet>
         <div style={{paddingTop:"20vh",paddingLeft:"8vw",paddingRight :"8vw"}}>
             <MDBRow style={{paddingBottom:"0.5vh"}}>
               <MDBCol md="12"><div><h2 style={{fontFamily:"Montserrat", color:"#016B86", fontSize:"32px",float:"left"}}><strong>RECOGNITION</strong></h2></div><br/></MDBCol>
