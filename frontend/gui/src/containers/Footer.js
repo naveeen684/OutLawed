@@ -80,7 +80,7 @@ const Footer = () => {
                     </li>
                   </dl>
                 </MDBCol>
-                <MDBCol sm="12" md="4">
+                <MDBCol sm="12" md="3">
                   <h5 className="title" style={{ color: "#049ABF",fontWeight:"600" ,fontSize:"16px" }}>
                     Our Work
                   </h5>
@@ -98,6 +98,25 @@ const Footer = () => {
                     <li className="list-unstyled">
                       <a href="/ourworks/outlawed-sessions" style={{ color: "#049ABF" }}>
                         OutLoud Sessions
+                      </a>
+                    </li>
+                  </dl>
+                </MDBCol>
+                <MDBCol md="3">
+                  <a href="/outreach">
+                  <h5 className="title" style={{ color: "#049ABF",fontWeight:"600",fontSize:"16px" }}>
+                    Outreach
+                  </h5>
+                  </a>
+                  <dl style={{ fontSize:"12px" }}>
+                    <li className="list-unstyled">
+                      <a href="/outreach" style={{ color: "#049ABF" }}>
+                        Media
+                      </a>
+                    </li>
+                    <li className="list-unstyled">
+                      <a href="/outreach" style={{ color: "#049ABF" }}>
+                        Recognition
                       </a>
                     </li>
                   </dl>
@@ -122,25 +141,6 @@ const Footer = () => {
                     <li className="list-unstyled">
                       <a href="/collaborations" style={{ color: "#049ABF" }}>
                         Our Partners
-                      </a>
-                    </li>
-                  </dl>
-                </MDBCol>
-                <MDBCol md="2">
-                  <a href="/outreach">
-                  <h5 className="title" style={{ color: "#049ABF",fontWeight:"600",fontSize:"16px" }}>
-                    Outreach
-                  </h5>
-                  </a>
-                  <dl style={{ fontSize:"12px" }}>
-                    <li className="list-unstyled">
-                      <a href="/outreach" style={{ color: "#049ABF" }}>
-                        Media
-                      </a>
-                    </li>
-                    <li className="list-unstyled">
-                      <a href="/outreach" style={{ color: "#049ABF" }}>
-                        Recognition
                       </a>
                     </li>
                   </dl>

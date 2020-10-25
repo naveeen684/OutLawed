@@ -3,23 +3,9 @@ import { MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBRow, 
 import Wave from './images/topwaveq.png';
 const CardExample = () => {
   return (
-    <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%",position:"center top",marginBottom:"15vh"}}>
-      <div 
-        style={{marginLeft:"auto",marginRight:"auto",display:"block",width:"80%"}}
-      >
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+    <div style={{backgroundImage: `url(${Wave})`,backgroundRepeat: 'no-repeat',width:'100vw',backgroundSize:"100%"}}>
+      
+    <div style={{paddingTop:"20vh",paddingLeft:"6vw",paddingRight :"8vw"}}>
       
      <MDBRow>
      <MDBCol lg="12">
@@ -31,7 +17,8 @@ const CardExample = () => {
                     </MDBCol>
     </MDBRow> 
     <MDBRow >
-      <MDBCol md="4" style={{margin:"auto"}}>
+      <MDBCol md="4" sm="6" style={{margin:"auto"}}>
+        <br ></br>
         <MDBCard wide >
           <MDBView >
             <MDBCardImage
@@ -66,7 +53,8 @@ const CardExample = () => {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      <MDBCol md="4" style={{margin:"auto"}}>
+      <MDBCol md="4" sm="6" style={{margin:"auto"}}>
+      <br ></br>
         <MDBCard wide cascade>
           <MDBView cascade>
             <MDBCardImage
@@ -101,7 +89,8 @@ const CardExample = () => {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      <MDBCol md="4" style={{margin:"auto"}}>
+      <MDBCol md="4" sm="6" style={{margin:"auto"}}>
+      <br ></br>
         <MDBCard wide cascade>
           <MDBView cascade>
             <MDBCardImage

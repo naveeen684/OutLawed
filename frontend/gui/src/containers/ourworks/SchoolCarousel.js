@@ -25,14 +25,14 @@ function SchoolCarousel() {
                 {
                   breakpoint: 726,
                   settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                   },
                 },
                 {
-                  breakpoint: 1080,
+                  breakpoint: 1109,
                   settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                   },
                 }

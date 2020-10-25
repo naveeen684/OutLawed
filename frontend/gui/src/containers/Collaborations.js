@@ -210,18 +210,18 @@ class Collaborations extends React.Component {
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/co2.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co4.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
+                      
                       <MDBCol>
                             <img className="responsive" src={require("./images/co3.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"2%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
                       <MDBCol>
-                            <img className="responsive" src={require("./images/co4.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
+                            <img className="responsive" src={require("./images/co2.png")} style={{marginLeft:"auto",marginRight:"auto",display:"block",width: "172px", height:"194px",borderRadius:"50%"}} alt="Founder" ></img>
                             <br />
                       </MDBCol>
-                      
                     </MDBRow>
                     <MDBRow>
                       <br/>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Spring } from "react-spring/renderprops";
 import InfiniteCarousel from "react-leaf-carousel";
-
+import "./component1.css";
 import {
   MDBJumbotron,
   MDBContainer,
@@ -116,15 +116,13 @@ function Component2() {
                     </button>
                 </a>
               </MDBCol>
-              <MDBCol lg="1"></MDBCol>
-              <MDBCol lg="4">
+              <MDBCol md="0" lg="1"></MDBCol>
+              <MDBCol sm="12" lg="5">
                   <img
                     src={require("./images/three.png")}
-                    className="img-fluid fixed"
-                    style={{width:"420px",height:"23vh"}}
-                    alt=""
+                    className="imgc"
+                    alt="Three girls"
                   />
-                 
               </MDBCol>
             </MDBRow>
             <br></br>
@@ -178,6 +176,7 @@ function Component2() {
               </MDBCol>
               <MDBCol md="1"></MDBCol>
               <MDBCol md="2" >
+                <br/>
                 <MDBCard
                   style={{
                     width: "177px",
