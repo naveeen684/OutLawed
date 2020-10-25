@@ -1,6 +1,8 @@
 import React from 'react'
 import InfiniteCarousel from 'react-leaf-carousel';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
+import "./schoolcarousel.css";
+
 function SchoolCarousel() {
     return (
         <div>
@@ -14,7 +16,7 @@ function SchoolCarousel() {
                   },
                 },
                 {
-                  breakpoint: 405,
+                  breakpoint: 450,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
