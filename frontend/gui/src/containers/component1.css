@@ -5,6 +5,19 @@
 .subh{
     font-size:40px;
 }
+@media(min-width:1981px){
+    h3.subh{
+        font-size:"34px";
+    }
+    h1.subh{
+        font-size: 200px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    p.subh{
+        font-size: 40px;
+    }
+}
 @media(max-width:1980px){
     h3.subh{
         font-size:"34px";
@@ -15,7 +28,7 @@
         padding-right: 2vw;
     }
     p.subh{
-        font-size: 46px;
+        font-size: 37px;
     }
 }
 

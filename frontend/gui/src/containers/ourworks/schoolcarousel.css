@@ -1,0 +1,17 @@
+.card-body .cartit{
+    font-size:25px !important
+}
+
+p .cartet .card-text{
+    font-size:25px !important
+}
+
+@media (max-width:425px){
+    .card-body .cartit{
+        font-size:12px !important
+    }
+    
+    .card-body .cartet{
+        font-size:8px !important
+    }
+}
