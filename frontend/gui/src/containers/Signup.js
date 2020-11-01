@@ -61,10 +61,9 @@ class Signup extends React.Component {
                 style={{
                   paddingLeft: "5vw",
                   marginLeft: "5vw",
-                  height: "105%",
-                  marginTop: "100px",
                   marginBottom: "auto",
                 }}
+                className="sideBanner1"
               >
                 <h1
                   style={{
@@ -242,7 +241,6 @@ class Signup extends React.Component {
               <div
                 style={{
                   backgroundColor: "#016B86",
-                  height: "105.5%",
                   width: "106%",
                   margin: "0px",
                   padding: "0px",
